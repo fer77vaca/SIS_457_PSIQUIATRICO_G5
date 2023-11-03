@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LabPsiquiatricoModelStoreContainer" CdmEntityContainer="LabPsiquiatricoEntities">
+    <EntitySetMapping Name="Cita">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Cita">
+        <MappingFragment StoreEntitySet="Cita">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="pago" ColumnName="pago" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicamento">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Medicamento">
+        <MappingFragment StoreEntitySet="Medicamento">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idReceta" ColumnName="idReceta" />
+          <ScalarProperty Name="nombreMedicamento" ColumnName="nombreMedicamento" />
+          <ScalarProperty Name="dosificacion" ColumnName="dosificacion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paciente">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Paciente">
+        <MappingFragment StoreEntitySet="Paciente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="historialMedico" ColumnName="historialMedico" />
+          <ScalarProperty Name="fechaAdmision" ColumnName="fechaAdmision" />
+          <ScalarProperty Name="tratamiento" ColumnName="tratamiento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personal">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Personal">
+        <MappingFragment StoreEntitySet="Personal">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="especialidad" ColumnName="especialidad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="horarioTrabajo" ColumnName="horarioTrabajo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Receta">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Receta">
+        <MappingFragment StoreEntitySet="Receta">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="fechaReceta" ColumnName="fechaReceta" />
+          <ScalarProperty Name="cantidadPrescrita" ColumnName="cantidadPrescrita" />
+          <ScalarProperty Name="instruccionesUso" ColumnName="instruccionesUso" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="paCitaListar" FunctionName="LabPsiquiatricoModel.Store.paCitaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paCitaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="pago" ColumnName="pago" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paMedicamentoListar" FunctionName="LabPsiquiatricoModel.Store.paMedicamentoListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paMedicamentoListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombreMedicamento" ColumnName="nombreMedicamento" />
+          <ScalarProperty Name="dosificacion" ColumnName="dosificacion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paPacienteListar" FunctionName="LabPsiquiatricoModel.Store.paPacienteListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paPacienteListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="edad" ColumnName="edad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="historialMedico" ColumnName="historialMedico" />
+          <ScalarProperty Name="fechaAdmision" ColumnName="fechaAdmision" />
+          <ScalarProperty Name="tratamiento" ColumnName="tratamiento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paPersonalListar" FunctionName="LabPsiquiatricoModel.Store.paPersonalListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paPersonalListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="especialidad" ColumnName="especialidad" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="horarioTrabajo" ColumnName="horarioTrabajo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paRecetaListar" FunctionName="LabPsiquiatricoModel.Store.paRecetaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paRecetaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fechaReceta" ColumnName="fechaReceta" />
+          <ScalarProperty Name="cantidadPrescrita" ColumnName="cantidadPrescrita" />
+          <ScalarProperty Name="instruccionesUso" ColumnName="instruccionesUso" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
