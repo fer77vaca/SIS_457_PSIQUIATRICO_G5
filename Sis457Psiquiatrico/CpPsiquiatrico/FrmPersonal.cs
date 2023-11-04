@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace CpPsiquiatrico
 {
-    public partial class Form1 : Form
+    public partial class FrmPersonal : Form
     {
-        public Form1()
+        public FrmPersonal()
         {
             InitializeComponent();
             dgvLista.DataSource = PersonalCln.listarPa("");
