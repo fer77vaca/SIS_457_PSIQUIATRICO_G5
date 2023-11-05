@@ -40,7 +40,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtHorario = new System.Windows.Forms.TextBox();
             this.txtEspecialidad = new System.Windows.Forms.TextBox();
@@ -60,13 +60,18 @@
             // 
             // dgvLista
             // 
+            this.dgvLista.AllowUserToAddRows = false;
+            this.dgvLista.AllowUserToDeleteRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.Location = new System.Drawing.Point(7, 27);
             this.dgvLista.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvLista.MultiSelect = false;
             this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.RowTemplate.Height = 24;
+            this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLista.Size = new System.Drawing.Size(926, 147);
             this.dgvLista.TabIndex = 0;
             // 
@@ -87,6 +92,7 @@
             this.txtParametro.Name = "txtParametro";
             this.txtParametro.Size = new System.Drawing.Size(787, 27);
             this.txtParametro.TabIndex = 2;
+            this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // label1
             // 
@@ -140,15 +146,18 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Location = new System.Drawing.Point(494, 6);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 32);
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
+            this.btnEditar.Enabled = false;
             this.btnEditar.Location = new System.Drawing.Point(380, 6);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(77, 32);
@@ -169,7 +178,7 @@
             // 
             // gbxDatos
             // 
-            this.gbxDatos.Controls.Add(this.textBox1);
+            this.gbxDatos.Controls.Add(this.txtTelefono);
             this.gbxDatos.Controls.Add(this.lblTelefono);
             this.gbxDatos.Controls.Add(this.txtHorario);
             this.gbxDatos.Controls.Add(this.txtEspecialidad);
@@ -188,12 +197,12 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos del Personal";
             // 
-            // textBox1
+            // txtTelefono
             // 
-            this.textBox1.Location = new System.Drawing.Point(547, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 27);
-            this.textBox1.TabIndex = 21;
+            this.txtTelefono.Location = new System.Drawing.Point(547, 34);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(264, 27);
+            this.txtTelefono.TabIndex = 21;
             // 
             // lblTelefono
             // 
@@ -286,6 +295,7 @@
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmPersonal
             // 
@@ -335,7 +345,7 @@
         private System.Windows.Forms.Label lblHorario;
         private System.Windows.Forms.Label lblEspecialidad;
         private System.Windows.Forms.Label lblCedula;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.TextBox txtHorario;
         private System.Windows.Forms.TextBox txtEspecialidad;
