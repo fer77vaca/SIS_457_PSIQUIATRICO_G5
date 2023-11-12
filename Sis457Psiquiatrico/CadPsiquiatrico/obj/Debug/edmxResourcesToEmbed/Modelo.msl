@@ -1,21 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="LabPsiquiatricoModelStoreContainer" CdmEntityContainer="LabPsiquiatricoEntities1">
-    <EntitySetMapping Name="Cita">
-      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Cita">
-        <MappingFragment StoreEntitySet="Cita">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
-          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
-          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
-          <ScalarProperty Name="horaCita" ColumnName="horaCita" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Medicamento">
       <EntityTypeMapping TypeName="LabPsiquiatricoModel.Medicamento">
         <MappingFragment StoreEntitySet="Medicamento">
@@ -145,5 +130,21 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <EntitySetMapping Name="Cita">
+      <EntityTypeMapping TypeName="LabPsiquiatricoModel.Cita">
+        <MappingFragment StoreEntitySet="Cita">
+          <ScalarProperty Name="pago" ColumnName="pago" />
+          <ScalarProperty Name="horaCita" ColumnName="horaCita" />
+          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

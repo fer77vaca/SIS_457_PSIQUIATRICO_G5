@@ -19,3 +19,4 @@ D:\Sis457Psiquiatrico\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.pdb
 D:\Sis457Psiquiatrico\CpPsiquiatrico\bin\Debug\EntityFramework.SqlServer.dll
 D:\Sis457Psiquiatrico\CpPsiquiatrico\bin\Debug\EntityFramework.SqlServer.xml
 D:\Sis457Psiquiatrico\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPersonal.resources
+D:\Sis457Psiquiatrico\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPaciente.resources

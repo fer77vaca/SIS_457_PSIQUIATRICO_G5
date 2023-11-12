@@ -1,21 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="LabPsiquiatricoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Cita">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="idPersonal" Type="Int32" Nullable="false" />
-    <Property Name="idPaciente" Type="Int32" Nullable="false" />
-    <Property Name="motivoCita" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="estado" Type="Int16" Nullable="false" />
-    <Property Name="fechaReservacion" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="horaCita" Type="DateTime" Nullable="false" Precision="0" />
-    <NavigationProperty Name="Paciente" Relationship="Self.fk_Cita_Paciente" FromRole="Cita" ToRole="Paciente" />
-    <NavigationProperty Name="Personal" Relationship="Self.fk_Cita_Personal" FromRole="Cita" ToRole="Personal" />
-  </EntityType>
   <EntityType Name="Medicamento">
     <Key>
       <PropertyRef Name="id" />
@@ -46,9 +30,9 @@
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
     <Property Name="fechaAdmision" Type="DateTime" Nullable="false" Precision="0" />
-    <NavigationProperty Name="Cita" Relationship="Self.fk_Cita_Paciente" FromRole="Paciente" ToRole="Cita" />
     <NavigationProperty Name="Personal" Relationship="Self.fk_Paciente_Personal" FromRole="Paciente" ToRole="Personal" />
     <NavigationProperty Name="Receta" Relationship="Self.fk_Receta_Paciente" FromRole="Paciente" ToRole="Receta" />
+    <NavigationProperty Name="Cita" Relationship="LabPsiquiatricoModel.fk_Cita_Paciente" FromRole="Paciente" ToRole="Cita" />
   </EntityType>
   <EntityType Name="Personal">
     <Key>
@@ -63,9 +47,9 @@
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
-    <NavigationProperty Name="Cita" Relationship="Self.fk_Cita_Personal" FromRole="Personal" ToRole="Cita" />
     <NavigationProperty Name="Paciente" Relationship="Self.fk_Paciente_Personal" FromRole="Personal" ToRole="Paciente" />
     <NavigationProperty Name="Usuario" Relationship="Self.fk_Usuario_Personal" FromRole="Personal" ToRole="Usuario" />
+    <NavigationProperty Name="Cita" Relationship="LabPsiquiatricoModel.fk_Cita_Personal" FromRole="Personal" ToRole="Cita" />
   </EntityType>
   <EntityType Name="Receta">
     <Key>
@@ -95,30 +79,6 @@
     <Property Name="estado" Type="Int16" Nullable="false" />
     <NavigationProperty Name="Personal" Relationship="Self.fk_Usuario_Personal" FromRole="Usuario" ToRole="Personal" />
   </EntityType>
-  <Association Name="fk_Cita_Paciente">
-    <End Role="Paciente" Type="Self.Paciente" Multiplicity="1" />
-    <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Paciente">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Cita">
-        <PropertyRef Name="idPaciente" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_Cita_Personal">
-    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
-    <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Personal">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Cita">
-        <PropertyRef Name="idPersonal" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_Medicamento_Receta">
     <End Role="Receta" Type="Self.Receta" Multiplicity="1" />
     <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="*" />
@@ -168,20 +128,11 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="LabPsiquiatricoEntities1" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Cita" EntityType="Self.Cita" />
     <EntitySet Name="Medicamento" EntityType="Self.Medicamento" />
     <EntitySet Name="Paciente" EntityType="Self.Paciente" />
     <EntitySet Name="Personal" EntityType="Self.Personal" />
     <EntitySet Name="Receta" EntityType="Self.Receta" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" />
-    <AssociationSet Name="fk_Cita_Paciente" Association="Self.fk_Cita_Paciente">
-      <End Role="Paciente" EntitySet="Paciente" />
-      <End Role="Cita" EntitySet="Cita" />
-    </AssociationSet>
-    <AssociationSet Name="fk_Cita_Personal" Association="Self.fk_Cita_Personal">
-      <End Role="Personal" EntitySet="Personal" />
-      <End Role="Cita" EntitySet="Cita" />
-    </AssociationSet>
     <AssociationSet Name="fk_Medicamento_Receta" Association="Self.fk_Medicamento_Receta">
       <End Role="Receta" EntitySet="Receta" />
       <End Role="Medicamento" EntitySet="Medicamento" />
@@ -213,6 +164,15 @@
     <FunctionImport Name="paRecetaListar" ReturnType="Collection(LabPsiquiatricoModel.paRecetaListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
+    <EntitySet Name="Cita" EntityType="LabPsiquiatricoModel.Cita" />
+    <AssociationSet Name="fk_Cita_Paciente" Association="LabPsiquiatricoModel.fk_Cita_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="Cita" EntitySet="Cita" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Cita_Personal" Association="LabPsiquiatricoModel.fk_Cita_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Cita" EntitySet="Cita" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="paMedicamentoListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
@@ -252,4 +212,45 @@
     <Property Type="Decimal" Name="cantidadPrescrita" Nullable="false" Precision="18" Scale="0" />
     <Property Type="String" Name="instruccionesUso" Nullable="false" MaxLength="250" />
   </ComplexType>
+  <EntityType Name="Cita">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersonal" Type="Int32" Nullable="false" />
+    <Property Name="idPaciente" Type="Int32" Nullable="false" />
+    <Property Name="motivoCita" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="fechaReservacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="horaCita" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="pago" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Paciente" Relationship="LabPsiquiatricoModel.fk_Cita_Paciente" FromRole="Cita" ToRole="Paciente" />
+    <NavigationProperty Name="Personal" Relationship="LabPsiquiatricoModel.fk_Cita_Personal" FromRole="Cita" ToRole="Personal" />
+  </EntityType>
+  <Association Name="fk_Cita_Paciente">
+    <End Type="LabPsiquiatricoModel.Paciente" Role="Paciente" Multiplicity="1" />
+    <End Type="LabPsiquiatricoModel.Cita" Role="Cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cita">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Cita_Personal">
+    <End Type="LabPsiquiatricoModel.Personal" Role="Personal" Multiplicity="1" />
+    <End Type="LabPsiquiatricoModel.Cita" Role="Cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cita">
+        <PropertyRef Name="idPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>
