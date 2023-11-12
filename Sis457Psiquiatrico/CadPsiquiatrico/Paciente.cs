@@ -17,8 +17,8 @@ namespace CadPsiquiatrico
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Paciente()
         {
-            this.Cita = new HashSet<Cita>();
             this.Receta = new HashSet<Receta>();
+            this.Cita = new HashSet<Cita>();
         }
     
         public int id { get; set; }
@@ -28,16 +28,16 @@ namespace CadPsiquiatrico
         public int edad { get; set; }
         public string telefono { get; set; }
         public string historialMedico { get; set; }
-        public string fechaAdmision { get; set; }
         public string tratamiento { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }
+        public System.DateTime fechaAdmision { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cita> Cita { get; set; }
         public virtual Personal Personal { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Receta> Receta { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cita> Cita { get; set; }
     }
 }

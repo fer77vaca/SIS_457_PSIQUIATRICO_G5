@@ -15,10 +15,10 @@ namespace CadPsiquiatrico
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class LabPsiquiatricoEntities : DbContext
+    public partial class LabPsiquiatricoEntities1 : DbContext
     {
-        public LabPsiquiatricoEntities()
-            : base("name=LabPsiquiatricoEntities")
+        public LabPsiquiatricoEntities1()
+            : base("name=LabPsiquiatricoEntities1")
         {
         }
     
@@ -27,20 +27,20 @@ namespace CadPsiquiatrico
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cita> Cita { get; set; }
         public virtual DbSet<Medicamento> Medicamento { get; set; }
         public virtual DbSet<Paciente> Paciente { get; set; }
         public virtual DbSet<Personal> Personal { get; set; }
         public virtual DbSet<Receta> Receta { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Cita> Cita { get; set; }
     
-        public virtual ObjectResult<paCitaListar_Result> paCitaListar(string parametro)
+        public virtual int paCitaListar(string parametro)
         {
             var parametroParameter = parametro != null ?
                 new ObjectParameter("parametro", parametro) :
                 new ObjectParameter("parametro", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paCitaListar_Result>("paCitaListar", parametroParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("paCitaListar", parametroParameter);
         }
     
         public virtual ObjectResult<paMedicamentoListar_Result> paMedicamentoListar(string parametro)

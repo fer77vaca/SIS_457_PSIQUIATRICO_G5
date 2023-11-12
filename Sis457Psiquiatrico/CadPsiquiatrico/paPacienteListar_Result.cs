@@ -14,12 +14,14 @@ namespace CadPsiquiatrico
     public partial class paPacienteListar_Result
     {
         public int id { get; set; }
-        public string nombre { get; set; }
+        public int idPersonal { get; set; }
+        public string nombrePersonal { get; set; }
+        public string nombrePaciente { get; set; }
         public string cedulaIdentidad { get; set; }
         public int edad { get; set; }
         public string telefono { get; set; }
         public string historialMedico { get; set; }
-        public string fechaAdmision { get; set; }
+        public System.DateTime fechaAdmision { get; set; }
         public string tratamiento { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }

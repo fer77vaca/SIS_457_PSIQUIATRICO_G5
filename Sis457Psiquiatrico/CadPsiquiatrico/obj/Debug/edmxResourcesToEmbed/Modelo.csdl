@@ -8,12 +8,11 @@
     <Property Name="idPersonal" Type="Int32" Nullable="false" />
     <Property Name="idPaciente" Type="Int32" Nullable="false" />
     <Property Name="motivoCita" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fecha" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="hora" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="pago" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="fechaReservacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="horaCita" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="Paciente" Relationship="Self.fk_Cita_Paciente" FromRole="Cita" ToRole="Paciente" />
     <NavigationProperty Name="Personal" Relationship="Self.fk_Cita_Personal" FromRole="Cita" ToRole="Personal" />
   </EntityType>
@@ -42,11 +41,11 @@
     <Property Name="edad" Type="Int32" Nullable="false" />
     <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="historialMedico" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="fechaAdmision" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="tratamiento" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="fechaAdmision" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="Cita" Relationship="Self.fk_Cita_Paciente" FromRole="Paciente" ToRole="Cita" />
     <NavigationProperty Name="Personal" Relationship="Self.fk_Paciente_Personal" FromRole="Paciente" ToRole="Personal" />
     <NavigationProperty Name="Receta" Relationship="Self.fk_Receta_Paciente" FromRole="Paciente" ToRole="Receta" />
@@ -168,7 +167,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="LabPsiquiatricoEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LabPsiquiatricoEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Cita" EntityType="Self.Cita" />
     <EntitySet Name="Medicamento" EntityType="Self.Medicamento" />
     <EntitySet Name="Paciente" EntityType="Self.Paciente" />
@@ -199,7 +198,7 @@
       <End Role="Personal" EntitySet="Personal" />
       <End Role="Usuario" EntitySet="Usuario" />
     </AssociationSet>
-    <FunctionImport Name="paCitaListar" ReturnType="Collection(LabPsiquiatricoModel.paCitaListar_Result)">
+    <FunctionImport Name="paCitaListar">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="paMedicamentoListar" ReturnType="Collection(LabPsiquiatricoModel.paMedicamentoListar_Result)">
@@ -215,13 +214,6 @@
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
-  <ComplexType Name="paCitaListar_Result">
-    <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="motivoCita" Nullable="false" MaxLength="250" />
-    <Property Type="String" Name="fecha" Nullable="false" MaxLength="50" />
-    <Property Type="String" Name="hora" Nullable="false" MaxLength="20" />
-    <Property Type="String" Name="pago" Nullable="false" MaxLength="20" />
-  </ComplexType>
   <ComplexType Name="paMedicamentoListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
     <Property Type="String" Name="nombreMedicamento" Nullable="false" MaxLength="250" />
@@ -230,12 +222,14 @@
   </ComplexType>
   <ComplexType Name="paPacienteListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="idPersonal" Nullable="false" />
+    <Property Type="String" Name="nombrePersonal" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="nombrePaciente" Nullable="false" MaxLength="50" />
     <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="20" />
     <Property Type="Int32" Name="edad" Nullable="false" />
     <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
     <Property Type="String" Name="historialMedico" Nullable="false" MaxLength="250" />
-    <Property Type="String" Name="fechaAdmision" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaAdmision" Nullable="false" />
     <Property Type="String" Name="tratamiento" Nullable="true" MaxLength="250" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />

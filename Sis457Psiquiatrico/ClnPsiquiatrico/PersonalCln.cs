@@ -11,7 +11,7 @@ namespace ClnPsiquiatrico
     {
         public static int insertar (Personal personal)
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 context.Personal.Add(personal);
                 context.SaveChanges();
@@ -20,7 +20,7 @@ namespace ClnPsiquiatrico
         }
         public static int actualizar(Personal personal)
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 var existente = context.Personal.Find(personal.id);
                 existente.nombre = personal.nombre;
@@ -34,7 +34,7 @@ namespace ClnPsiquiatrico
         }
         public static int eliminar(int id, string usuarioRegistro)
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 var existente = context.Personal.Find(id);
                 existente.estado = -1;
@@ -46,7 +46,7 @@ namespace ClnPsiquiatrico
         // OBTENER POR UN id
         public static Personal get(int id)
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 return context.Personal.Find(id);
             }
@@ -55,7 +55,7 @@ namespace ClnPsiquiatrico
         // OBTENER TODOS LISTA
         public static List<Personal> listar()
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 return context.Personal.Where(x => x.estado != -1).ToList();
             }
@@ -64,7 +64,7 @@ namespace ClnPsiquiatrico
         // OBTENER TODOS CON PROCEDIMIENTO ALMACENADO
         public static List<paPersonalListar_Result> listarPa(string parametro)
         {
-            using (var context = new LabPsiquiatricoEntities())
+            using (var context = new LabPsiquiatricoEntities1())
             {
                 return context.paPersonalListar(parametro).ToList();
             }

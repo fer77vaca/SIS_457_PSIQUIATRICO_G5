@@ -8,12 +8,11 @@
     <Property Name="idPersonal" Type="int" Nullable="false" />
     <Property Name="idPaciente" Type="int" Nullable="false" />
     <Property Name="motivoCita" Type="varchar" MaxLength="250" Nullable="false" />
-    <Property Name="fecha" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="hora" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="pago" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="fechaReservacion" Type="date" Nullable="false" />
+    <Property Name="horaCita" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="Medicamento">
     <Key>
@@ -39,11 +38,11 @@
     <Property Name="edad" Type="int" Nullable="false" />
     <Property Name="telefono" Type="varchar" MaxLength="20" />
     <Property Name="historialMedico" Type="varchar" MaxLength="250" Nullable="false" />
-    <Property Name="fechaAdmision" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="tratamiento" Type="varchar" MaxLength="250" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
+    <Property Name="fechaAdmision" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="Personal">
     <Key>

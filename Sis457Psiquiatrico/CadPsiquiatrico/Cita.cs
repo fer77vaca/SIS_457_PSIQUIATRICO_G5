@@ -18,12 +18,12 @@ namespace CadPsiquiatrico
         public int idPersonal { get; set; }
         public int idPaciente { get; set; }
         public string motivoCita { get; set; }
-        public string fecha { get; set; }
-        public string hora { get; set; }
-        public string pago { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }
+        public System.DateTime fechaReservacion { get; set; }
+        public System.DateTime horaCita { get; set; }
+        public decimal pago { get; set; }
     
         public virtual Paciente Paciente { get; set; }
         public virtual Personal Personal { get; set; }

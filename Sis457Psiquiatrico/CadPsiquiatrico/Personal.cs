@@ -17,9 +17,9 @@ namespace CadPsiquiatrico
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Personal()
         {
-            this.Cita = new HashSet<Cita>();
             this.Paciente = new HashSet<Paciente>();
             this.Usuario = new HashSet<Usuario>();
+            this.Cita = new HashSet<Cita>();
         }
     
         public int id { get; set; }
@@ -33,10 +33,10 @@ namespace CadPsiquiatrico
         public short estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cita> Cita { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Paciente> Paciente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Usuario> Usuario { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cita> Cita { get; set; }
     }
 }

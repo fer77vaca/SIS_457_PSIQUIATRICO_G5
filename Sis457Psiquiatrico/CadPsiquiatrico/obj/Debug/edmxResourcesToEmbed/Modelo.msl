@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="LabPsiquiatricoModelStoreContainer" CdmEntityContainer="LabPsiquiatricoEntities">
+  <EntityContainerMapping StorageEntityContainer="LabPsiquiatricoModelStoreContainer" CdmEntityContainer="LabPsiquiatricoEntities1">
     <EntitySetMapping Name="Cita">
       <EntityTypeMapping TypeName="LabPsiquiatricoModel.Cita">
         <MappingFragment StoreEntitySet="Cita">
@@ -8,12 +8,11 @@
           <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
           <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
-          <ScalarProperty Name="fecha" ColumnName="fecha" />
-          <ScalarProperty Name="hora" ColumnName="hora" />
-          <ScalarProperty Name="pago" ColumnName="pago" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
+          <ScalarProperty Name="horaCita" ColumnName="horaCita" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -41,11 +40,11 @@
           <ScalarProperty Name="edad" ColumnName="edad" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="historialMedico" ColumnName="historialMedico" />
-          <ScalarProperty Name="fechaAdmision" ColumnName="fechaAdmision" />
           <ScalarProperty Name="tratamiento" ColumnName="tratamiento" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="fechaAdmision" ColumnName="fechaAdmision" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -91,17 +90,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="paCitaListar" FunctionName="LabPsiquiatricoModel.Store.paCitaListar">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paCitaListar_Result">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
-          <ScalarProperty Name="fecha" ColumnName="fecha" />
-          <ScalarProperty Name="hora" ColumnName="hora" />
-          <ScalarProperty Name="pago" ColumnName="pago" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paCitaListar" FunctionName="LabPsiquiatricoModel.Store.paCitaListar" />
     <FunctionImportMapping FunctionImportName="paMedicamentoListar" FunctionName="LabPsiquiatricoModel.Store.paMedicamentoListar">
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paMedicamentoListar_Result">
@@ -116,7 +105,9 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paPacienteListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+          <ScalarProperty Name="nombrePersonal" ColumnName="nombrePersonal" />
+          <ScalarProperty Name="nombrePaciente" ColumnName="nombrePaciente" />
           <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
           <ScalarProperty Name="edad" ColumnName="edad" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
