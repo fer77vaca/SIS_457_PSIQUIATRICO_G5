@@ -16,5 +16,13 @@ namespace CpPsiquiatrico
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmPrincipal form = new FrmPrincipal();
+            form.ShowDialog();
+            //this.Hide();
+        }
     }
 }

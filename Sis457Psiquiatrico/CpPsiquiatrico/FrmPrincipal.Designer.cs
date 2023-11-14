@@ -167,6 +167,7 @@
             // 
             // pnlControl
             // 
+            this.pnlControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlControl.Location = new System.Drawing.Point(173, 12);
             this.pnlControl.Name = "pnlControl";
             this.pnlControl.Size = new System.Drawing.Size(1370, 715);
@@ -181,6 +182,7 @@
             this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.pnlAcciones);
             this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.pnlAcciones.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
