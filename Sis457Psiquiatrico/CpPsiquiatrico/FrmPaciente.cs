@@ -65,11 +65,23 @@ namespace CpPsiquiatrico
         {
             esNuevo = false;
             Size = new Size(1018, 606);
+
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            var paciente = PacienteCln.get(id);
+            txtNombre.Text = paciente.nombre;
+            txtCedula.Text = paciente.cedulaIdentidad;
+            txtTelefono.Text = paciente.telefono;
+            txtHistorial.Text = paciente.historialMedico;
+            txtTratamiento.Text = paciente.tratamiento;
+            nudEdad.Value = paciente.edad;
+            dtpFechaAdmision.Value = paciente.fechaAdmision;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Size = new Size(1018, 374);
+            limpiar();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -117,6 +129,32 @@ namespace CpPsiquiatrico
             btnCancelar.PerformClick();
             MessageBox.Show("Paciente guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void limpiar()
+        {
+            txtNombre.Text = string.Empty;
+            txtCedula.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtHistorial.Text = string.Empty;
+            txtTratamiento.Text = string.Empty;
+            nudEdad.Value = 0;
+            dtpFechaAdmision.Value = DateTime.Now;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            string nombrePaciente = dgvLista.Rows[index].Cells["nombrePaciente"].Value.ToString();
+            DialogResult dialog = MessageBox.Show($"Esta seguro que desea eliminar el paciente {nombrePaciente}?",
+                "::: Psiquiatrico - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialog == DialogResult.OK)
+            {
+                PacienteCln.eliminar(id, "FVC");
+                listar();
+                MessageBox.Show("Paciente eliminado correctamente", "::: Psiquiatrico - Mensaje :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

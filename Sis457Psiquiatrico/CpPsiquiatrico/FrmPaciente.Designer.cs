@@ -40,6 +40,8 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.lblPersonalAsignado = new System.Windows.Forms.Label();
+            this.cbxPersonal = new System.Windows.Forms.ComboBox();
             this.nudEdad = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFechaAdmision = new System.Windows.Forms.DateTimePicker();
@@ -56,8 +58,6 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.cbxPersonal = new System.Windows.Forms.ComboBox();
-            this.lblPersonalAsignado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
@@ -160,6 +160,7 @@
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -208,6 +209,23 @@
             this.gbxDatos.TabIndex = 11;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos del Paciente";
+            // 
+            // lblPersonalAsignado
+            // 
+            this.lblPersonalAsignado.AutoSize = true;
+            this.lblPersonalAsignado.Location = new System.Drawing.Point(442, 112);
+            this.lblPersonalAsignado.Name = "lblPersonalAsignado";
+            this.lblPersonalAsignado.Size = new System.Drawing.Size(154, 20);
+            this.lblPersonalAsignado.TabIndex = 37;
+            this.lblPersonalAsignado.Text = "Personal Asignado:";
+            // 
+            // cbxPersonal
+            // 
+            this.cbxPersonal.FormattingEnabled = true;
+            this.cbxPersonal.Location = new System.Drawing.Point(609, 109);
+            this.cbxPersonal.Name = "cbxPersonal";
+            this.cbxPersonal.Size = new System.Drawing.Size(301, 28);
+            this.cbxPersonal.TabIndex = 36;
             // 
             // nudEdad
             // 
@@ -343,23 +361,6 @@
             this.lblNombre.TabIndex = 20;
             this.lblNombre.Text = "Nombre:";
             // 
-            // cbxPersonal
-            // 
-            this.cbxPersonal.FormattingEnabled = true;
-            this.cbxPersonal.Location = new System.Drawing.Point(609, 109);
-            this.cbxPersonal.Name = "cbxPersonal";
-            this.cbxPersonal.Size = new System.Drawing.Size(301, 28);
-            this.cbxPersonal.TabIndex = 36;
-            // 
-            // lblPersonalAsignado
-            // 
-            this.lblPersonalAsignado.AutoSize = true;
-            this.lblPersonalAsignado.Location = new System.Drawing.Point(442, 112);
-            this.lblPersonalAsignado.Name = "lblPersonalAsignado";
-            this.lblPersonalAsignado.Size = new System.Drawing.Size(154, 20);
-            this.lblPersonalAsignado.TabIndex = 37;
-            this.lblPersonalAsignado.Text = "Personal Asignado:";
-            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -376,7 +377,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPaciente";
-            this.Text = "FrmPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "::: Paciente - Psiquiatrico :::";
             this.Load += new System.EventHandler(this.FrmPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.gbxLista.ResumeLayout(false);
