@@ -42,3 +42,4 @@ D:\Sis457Psiquiatrico - copia\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.Cor
 D:\Sis457Psiquiatrico - copia\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CopyComplete
 D:\Sis457Psiquiatrico - copia\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.exe
 D:\Sis457Psiquiatrico - copia\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.pdb
+D:\Sis457Psiquiatrico - copia\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmAutenticacion.resources
