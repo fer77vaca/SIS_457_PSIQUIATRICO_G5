@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.pnlLogo = new System.Windows.Forms.Panel();
             this.btnReceta = new System.Windows.Forms.Button();
             this.btnMedicamento = new System.Windows.Forms.Button();
             this.btnCita = new System.Windows.Forms.Button();
             this.btnPaciente = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.pbxLogo = new System.Windows.Forms.PictureBox();
+            this.pnlControl = new System.Windows.Forms.Panel();
             this.pnlAcciones.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
@@ -53,17 +54,8 @@
             this.pnlAcciones.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlAcciones.Location = new System.Drawing.Point(0, 0);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(159, 643);
+            this.pnlAcciones.Size = new System.Drawing.Size(159, 750);
             this.pnlAcciones.TabIndex = 0;
-            // 
-            // pnlLogo
-            // 
-            this.pnlLogo.Controls.Add(this.pbxLogo);
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(159, 156);
-            this.pnlLogo.TabIndex = 1;
             // 
             // btnReceta
             // 
@@ -77,7 +69,7 @@
             this.btnReceta.Name = "btnReceta";
             this.btnReceta.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnReceta.Size = new System.Drawing.Size(159, 56);
-            this.btnReceta.TabIndex = 5;
+            this.btnReceta.TabIndex = 4;
             this.btnReceta.Text = "Receta";
             this.btnReceta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReceta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -94,7 +86,7 @@
             this.btnMedicamento.Name = "btnMedicamento";
             this.btnMedicamento.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnMedicamento.Size = new System.Drawing.Size(159, 56);
-            this.btnMedicamento.TabIndex = 4;
+            this.btnMedicamento.TabIndex = 3;
             this.btnMedicamento.Text = "Medicamento";
             this.btnMedicamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedicamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -111,7 +103,7 @@
             this.btnCita.Name = "btnCita";
             this.btnCita.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnCita.Size = new System.Drawing.Size(159, 56);
-            this.btnCita.TabIndex = 3;
+            this.btnCita.TabIndex = 2;
             this.btnCita.Text = "Cita";
             this.btnCita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCita.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -128,11 +120,12 @@
             this.btnPaciente.Name = "btnPaciente";
             this.btnPaciente.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPaciente.Size = new System.Drawing.Size(159, 56);
-            this.btnPaciente.TabIndex = 2;
+            this.btnPaciente.TabIndex = 1;
             this.btnPaciente.Text = "Paciente";
             this.btnPaciente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPaciente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPaciente.UseVisualStyleBackColor = false;
+            this.btnPaciente.Click += new System.EventHandler(this.btnPaciente_Click);
             // 
             // btnPersonal
             // 
@@ -145,11 +138,21 @@
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPersonal.Size = new System.Drawing.Size(159, 56);
-            this.btnPersonal.TabIndex = 1;
+            this.btnPersonal.TabIndex = 0;
             this.btnPersonal.Text = "Personal";
             this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPersonal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.Controls.Add(this.pbxLogo);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(159, 156);
+            this.pnlLogo.TabIndex = 1;
             // 
             // pbxLogo
             // 
@@ -162,11 +165,20 @@
             this.pbxLogo.TabIndex = 1;
             this.pbxLogo.TabStop = false;
             // 
+            // pnlControl
+            // 
+            this.pnlControl.Location = new System.Drawing.Point(173, 12);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(1370, 715);
+            this.pnlControl.TabIndex = 1;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 643);
+            this.BackColor = System.Drawing.Color.LightSalmon;
+            this.ClientSize = new System.Drawing.Size(1555, 750);
+            this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.pnlAcciones);
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
@@ -187,5 +199,6 @@
         private System.Windows.Forms.Button btnCita;
         private System.Windows.Forms.Button btnPaciente;
         private System.Windows.Forms.PictureBox pbxLogo;
+        private System.Windows.Forms.Panel pnlControl;
     }
 }
