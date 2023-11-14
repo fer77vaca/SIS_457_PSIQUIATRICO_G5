@@ -57,14 +57,14 @@ namespace CpPsiquiatrico
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(1018, 606);
+            Size = new Size(1018, 611);
             txtNombre.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esNuevo = false;
-            Size = new Size(1018, 606);
+            Size = new Size(1018, 611);
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);

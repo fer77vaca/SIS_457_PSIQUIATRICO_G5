@@ -74,6 +74,12 @@
     <Compile Include="FrmPersonal.Designer.cs">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAutenticacion.resx">
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +130,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\A2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-doctor-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-venda-triangular-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-registro-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-vacuna-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receta-de-cerveza-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A21.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
