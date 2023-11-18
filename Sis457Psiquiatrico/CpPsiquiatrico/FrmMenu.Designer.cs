@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlAcciones = new System.Windows.Forms.Panel();
+            this.btnUsusario = new System.Windows.Forms.Button();
             this.btnCatalogo = new System.Windows.Forms.Button();
             this.btnPaciente = new System.Windows.Forms.Button();
             this.btnCita = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pbxImagen = new System.Windows.Forms.PictureBox();
-            this.btnUsusario = new System.Windows.Forms.Button();
             this.pnlAcciones.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +67,16 @@
             this.pnlAcciones.Size = new System.Drawing.Size(160, 573);
             this.pnlAcciones.TabIndex = 0;
             // 
+            // btnUsusario
+            // 
+            this.btnUsusario.Location = new System.Drawing.Point(3, 295);
+            this.btnUsusario.Name = "btnUsusario";
+            this.btnUsusario.Size = new System.Drawing.Size(150, 49);
+            this.btnUsusario.TabIndex = 5;
+            this.btnUsusario.Text = "Usuario";
+            this.btnUsusario.UseVisualStyleBackColor = true;
+            this.btnUsusario.Click += new System.EventHandler(this.btnUsusario_Click);
+            // 
             // btnCatalogo
             // 
             this.btnCatalogo.Location = new System.Drawing.Point(3, 350);
@@ -75,6 +85,7 @@
             this.btnCatalogo.TabIndex = 4;
             this.btnCatalogo.Text = "Catalogo";
             this.btnCatalogo.UseVisualStyleBackColor = true;
+            this.btnCatalogo.Click += new System.EventHandler(this.btnCatalogo_Click);
             // 
             // btnPaciente
             // 
@@ -194,16 +205,6 @@
             this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxImagen.TabIndex = 0;
             this.pbxImagen.TabStop = false;
-            // 
-            // btnUsusario
-            // 
-            this.btnUsusario.Location = new System.Drawing.Point(3, 295);
-            this.btnUsusario.Name = "btnUsusario";
-            this.btnUsusario.Size = new System.Drawing.Size(150, 49);
-            this.btnUsusario.TabIndex = 5;
-            this.btnUsusario.Text = "Usuario";
-            this.btnUsusario.UseVisualStyleBackColor = true;
-            this.btnUsusario.Click += new System.EventHandler(this.btnUsusario_Click);
             // 
             // FrmMenu
             // 

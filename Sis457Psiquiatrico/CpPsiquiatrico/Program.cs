@@ -16,7 +16,7 @@ namespace CpPsiquiatrico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCatalogo());
+            Application.Run(new FrmUsuario());
         }
     }
 }

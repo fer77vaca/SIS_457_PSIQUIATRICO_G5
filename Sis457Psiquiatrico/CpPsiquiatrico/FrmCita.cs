@@ -55,6 +55,7 @@ namespace CpPsiquiatrico
         {
             esNuevo = true;
             Size = new Size(1000, 564);
+            cbxPaciente.Enabled = true; //MODIFICACION MELBY
             txtMotivo.Focus();
         }
         private void btnEditar_Click(object sender, EventArgs e)
@@ -137,6 +138,7 @@ namespace CpPsiquiatrico
                     cita.estado = 1;
                     cita.idPaciente = Convert.ToInt32(cbxPaciente.SelectedValue);
                     //cita.idPaciente = 1;
+                    cbxPaciente.Enabled = true;
                     CitaCln.insertar(cita);
                 }
                 else

@@ -65,6 +65,14 @@ namespace CpPsiquiatrico
 
             this.Hide();
         }
+
+        private void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            FrmCatalogo catalogo = new FrmCatalogo();
+            catalogo.Show();
+
+            this.Hide();
+        }
     }
     //public void OpenChilForm(Form ChilForm)
     //{

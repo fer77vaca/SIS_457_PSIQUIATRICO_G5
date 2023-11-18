@@ -81,6 +81,7 @@ namespace CpPsiquiatrico
                     usuario.estado = 1;
                     usuario.idPersonal = Convert.ToInt32(cbxCedulaIdentidad.SelectedValue);
                     //usuario.idPersonal = 2;
+                    cbxCedulaIdentidad.Enabled = true;
                     UsuarioCln.insertar(usuario);
                 }
                 else
@@ -100,6 +101,7 @@ namespace CpPsiquiatrico
         {
             esNuevo = true;
             Size = new Size(1000, 562);
+            cbxCedulaIdentidad.Enabled = true;  // Melby modificacion
             txtUsuario.Focus();
         }
 
@@ -107,6 +109,8 @@ namespace CpPsiquiatrico
         {
             esNuevo = false;
             Size = new Size(1000, 562);
+
+            cbxCedulaIdentidad.Enabled = false; // Ultima de ultimas
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
