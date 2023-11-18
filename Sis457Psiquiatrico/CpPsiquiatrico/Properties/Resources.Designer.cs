@@ -203,6 +203,26 @@ namespace CpPsiquiatrico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_doctor_301 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-doctor-301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menú_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menú-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_minimizar_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minimizar-30", resourceCulture);
@@ -233,6 +253,16 @@ namespace CpPsiquiatrico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_registro_301 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-registro-301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_vacuna_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-vacuna-30", resourceCulture);
@@ -246,6 +276,26 @@ namespace CpPsiquiatrico.Properties {
         internal static System.Drawing.Bitmap icons8_venda_triangular_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-venda-triangular-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_venda_triangular_301 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-venda-triangular-301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_visible_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-visible-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
