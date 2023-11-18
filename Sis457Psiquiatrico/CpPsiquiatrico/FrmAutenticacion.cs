@@ -20,9 +20,9 @@ namespace CpPsiquiatrico
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal form = new FrmPrincipal();
+            FrmMenu form = new FrmMenu();
             form.ShowDialog();
-            //this.Hide();
+            this.Hide();
         }
     }
 }

@@ -86,7 +86,7 @@ namespace CpPsiquiatrico
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -155,6 +155,14 @@ namespace CpPsiquiatrico
                 MessageBox.Show("Paciente eliminado correctamente", "::: Psiquiatrico - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+
+            this.Close();
         }
     }
 }

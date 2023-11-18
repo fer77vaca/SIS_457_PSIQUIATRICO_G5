@@ -66,7 +66,6 @@ D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CoreCompi
 D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CopyComplete
 D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.exe
 D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.pdb
-D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPrincipal.resources
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\bin\Debug\CpPsiquiatrico.exe.config
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\bin\Debug\CpPsiquiatrico.exe
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\bin\Debug\CpPsiquiatrico.pdb
@@ -143,3 +142,5 @@ D:\Sis457Psiquiatrico_1\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CoreCompi
 D:\Sis457Psiquiatrico_1\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CopyComplete
 D:\Sis457Psiquiatrico_1\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.exe
 D:\Sis457Psiquiatrico_1\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.pdb
+D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmCita.resources
+D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmMenu.resources

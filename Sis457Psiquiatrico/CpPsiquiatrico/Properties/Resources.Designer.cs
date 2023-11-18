@@ -83,6 +83,26 @@ namespace CpPsiquiatrico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap A22 {
+            get {
+                object obj = ResourceManager.GetObject("A22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c11eaa946097fceb09c32506e83ddc4c {
+            get {
+                object obj = ResourceManager.GetObject("c11eaa946097fceb09c32506e83ddc4c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doctor {
             get {
                 object obj = ResourceManager.GetObject("doctor", resourceCulture);
@@ -93,9 +113,29 @@ namespace CpPsiquiatrico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cerrar_ventana_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cerrar-ventana-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_doctor_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-doctor-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_minimizar_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-minimizar-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

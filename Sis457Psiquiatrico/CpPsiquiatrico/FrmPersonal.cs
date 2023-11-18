@@ -67,10 +67,6 @@ namespace CpPsiquiatrico
             Size = new Size(1018, 396);
             limpiar();
         }
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             listar();
@@ -78,6 +74,41 @@ namespace CpPsiquiatrico
         private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) listar();
+        }
+        private bool validar ()
+        {
+            bool esValido = true;
+            erpNombre.SetError(txtNombre, "");
+            erpCedula.SetError(txtCedula, "");
+            erpEspecialidad.SetError(txtEspecialidad, "");
+            erpHorario.SetError(txtHorario, "");
+            erpTelefono.SetError(txtTelefono, "");
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                esValido = false;
+                erpNombre.SetError(txtNombre, "El campo Nombre es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtCedula.Text))
+            {
+                esValido = false;
+                erpCedula.SetError(txtCedula, "El campo Cedula es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtEspecialidad.Text))
+            {
+                esValido = false;
+                erpEspecialidad.SetError(txtEspecialidad, "El campo Especialidad es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtHorario.Text))
+            {
+                esValido = false;
+                erpHorario.SetError(txtHorario, "El campo Horario es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                esValido = false;
+                erpTelefono.SetError(txtTelefono, "El campo Telefono es obligatorio");
+            }
+            return esValido;
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -129,6 +160,13 @@ namespace CpPsiquiatrico
                 MessageBox.Show("Personal eliminado correctamente", "::: Psiquiatrico - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+
+            this.Close();
         }
     }
 }

@@ -35,7 +35,6 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -58,6 +57,7 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
@@ -132,24 +132,13 @@
             // 
             // pnlAcciones
             // 
-            this.pnlAcciones.Controls.Add(this.btnCerrar);
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
             this.pnlAcciones.Location = new System.Drawing.Point(109, 279);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(772, 41);
+            this.pnlAcciones.Size = new System.Drawing.Size(525, 41);
             this.pnlAcciones.TabIndex = 10;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(512, 3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(77, 32);
-            this.btnCerrar.TabIndex = 14;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
@@ -361,12 +350,23 @@
             this.lblNombre.TabIndex = 20;
             this.lblNombre.Text = "Nombre:";
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(838, 293);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(143, 33);
+            this.btnVolver.TabIndex = 12;
+            this.btnVolver.Text = "Volver a Menu";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1000, 564);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
@@ -400,7 +400,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox gbxLista;
         private System.Windows.Forms.Panel pnlAcciones;
-        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label lblFechaAdmision;
         private System.Windows.Forms.ComboBox cbxPersonal;
         private System.Windows.Forms.Label lblPersonalAsignado;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

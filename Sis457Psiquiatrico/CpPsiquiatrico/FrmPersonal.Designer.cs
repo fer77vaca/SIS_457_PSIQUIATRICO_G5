@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
@@ -35,7 +36,6 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -52,10 +52,21 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpCedula = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpEspecialidad = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpHorario = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTelefono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
             this.gbxDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEspecialidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpHorario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -126,29 +137,18 @@
             // 
             // pnlAcciones
             // 
-            this.pnlAcciones.Controls.Add(this.btnCerrar);
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(32, 300);
+            this.pnlAcciones.Location = new System.Drawing.Point(159, 300);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(940, 44);
+            this.pnlAcciones.Size = new System.Drawing.Size(491, 44);
             this.pnlAcciones.TabIndex = 6;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(612, 6);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(77, 32);
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
             this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(494, 6);
+            this.btnEliminar.Location = new System.Drawing.Point(371, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 32);
             this.btnEliminar.TabIndex = 9;
@@ -159,7 +159,7 @@
             // btnEditar
             // 
             this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(380, 6);
+            this.btnEditar.Location = new System.Drawing.Point(257, 3);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(77, 32);
             this.btnEditar.TabIndex = 8;
@@ -169,7 +169,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(271, 6);
+            this.btnNuevo.Location = new System.Drawing.Point(148, 3);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(77, 32);
             this.btnNuevo.TabIndex = 7;
@@ -298,12 +298,43 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // erpNombre
+            // 
+            this.erpNombre.ContainerControl = this;
+            // 
+            // erpCedula
+            // 
+            this.erpCedula.ContainerControl = this;
+            // 
+            // erpEspecialidad
+            // 
+            this.erpEspecialidad.ContainerControl = this;
+            // 
+            // erpHorario
+            // 
+            this.erpHorario.ContainerControl = this;
+            // 
+            // erpTelefono
+            // 
+            this.erpTelefono.ContainerControl = this;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(822, 303);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(143, 33);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "Volver a Menu";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // FrmPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1000, 564);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
@@ -323,6 +354,11 @@
             this.pnlAcciones.ResumeLayout(false);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEspecialidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpHorario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,7 +373,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.GroupBox gbxLista;
         private System.Windows.Forms.Panel pnlAcciones;
-        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
@@ -354,6 +389,12 @@
         private System.Windows.Forms.TextBox txtEspecialidad;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.ErrorProvider erpNombre;
+        private System.Windows.Forms.ErrorProvider erpCedula;
+        private System.Windows.Forms.ErrorProvider erpEspecialidad;
+        private System.Windows.Forms.ErrorProvider erpHorario;
+        private System.Windows.Forms.ErrorProvider erpTelefono;
+        private System.Windows.Forms.Button btnVolver;
     }
 }
 
