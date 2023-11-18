@@ -49,7 +49,7 @@ namespace CpPsiquiatrico
 
         private void FrmPaciente_Load(object sender, EventArgs e)
         {
-            Size = new Size(1018, 374);
+            Size = new Size(1000, 336);  //1000, 564  1000, 336
             listar();
             cargarPersonal();
         }
@@ -57,14 +57,14 @@ namespace CpPsiquiatrico
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(1018, 611);
+            Size = new Size(1000, 564);
             txtNombre.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esNuevo = false;
-            Size = new Size(1018, 611);
+            Size = new Size(1000, 564);
 
             cbxPersonal.Enabled = false;        // Ultima modificacion MELBYN 
 
@@ -82,7 +82,7 @@ namespace CpPsiquiatrico
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(1018, 374);
+            Size = new Size(1000, 336);
             limpiar();
         }
 
@@ -100,37 +100,93 @@ namespace CpPsiquiatrico
         {
             if (e.KeyChar == (char)Keys.Enter) listar();
         }
+        private bool validar()
+        {
+            bool esValido = true;
+            erpNombre.SetError(txtNombre, "");
+            erpCedula.SetError(txtCedula, "");
+            erpEdad.SetError(nudEdad, "");
+            erpTelefono.SetError(txtTelefono, "");
+            erpHistorial.SetError(txtHistorial, "");
+            erpTratamiento.SetError(txtTratamiento, "");
+            erpFechaAdmision.SetError(dtpFechaAdmision, "");
+            erpPersonal.SetError(cbxPersonal, "");
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                esValido = false;
+                erpNombre.SetError(txtNombre, "El campo Nombre es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtCedula.Text))
+            {
+                esValido = false;
+                erpCedula.SetError(txtCedula, "El campo Cedula es obligatorio");
+            }
+            if (string.IsNullOrEmpty(nudEdad.Text))
+            {
+                esValido = false;
+                erpEdad.SetError(nudEdad, "El campo Especialidad es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                esValido = false;
+                erpTelefono.SetError(txtTelefono, "El campo Telefono es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtHistorial.Text))
+            {
+                esValido = false;
+                erpHistorial.SetError(txtHistorial, "El campo Historial es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtTratamiento.Text))
+            {
+                esValido = false;
+                erpTratamiento.SetError(txtTratamiento, "El campo Tratamiento es obligatorio");
+            }
+            if (string.IsNullOrEmpty(dtpFechaAdmision.Text))
+            {
+                esValido = false;
+                erpFechaAdmision.SetError(txtTratamiento, "El campo Fecha de Admision es obligatorio");
+            }
+            if(string.IsNullOrEmpty(cbxPersonal.Text))
+            {
+                esValido = false;
+                erpPersonal.SetError(cbxPersonal, "El campo Personal es obligatorio");
+            }
+            return esValido;
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            var paciente = new Paciente();
-            paciente.nombre = txtNombre.Text.Trim();
-            paciente.cedulaIdentidad = txtCedula.Text.Trim();
-            paciente.telefono = txtTelefono.Text.Trim();
-            paciente.historialMedico = txtHistorial.Text.Trim();
-            paciente.tratamiento = txtTratamiento.Text.Trim();
-            paciente.edad = Convert.ToInt32(nudEdad.Text);
-            paciente.fechaAdmision = dtpFechaAdmision.Value;
-            paciente.usuarioRegistro = "FVC";
+            if (validar())
+            {
+                var paciente = new Paciente();
+                paciente.nombre = txtNombre.Text.Trim();
+                paciente.cedulaIdentidad = txtCedula.Text.Trim();
+                paciente.telefono = txtTelefono.Text.Trim();
+                paciente.historialMedico = txtHistorial.Text.Trim();
+                paciente.tratamiento = txtTratamiento.Text.Trim();
+                paciente.edad = Convert.ToInt32(nudEdad.Text);
+                paciente.fechaAdmision = dtpFechaAdmision.Value;
+                paciente.usuarioRegistro = "FVC";
 
-            if (esNuevo)
-            {
-                paciente.fechaRegistro = DateTime.Now;
-                paciente.estado = 1;
-                paciente.idPersonal = Convert.ToInt32(cbxPersonal.SelectedValue);
-                //paciente.idPersonal = 2;
-                PacienteCln.insertar(paciente);
+                if (esNuevo)
+                {
+                    paciente.fechaRegistro = DateTime.Now;
+                    paciente.estado = 1;
+                    paciente.idPersonal = Convert.ToInt32(cbxPersonal.SelectedValue);
+                    //paciente.idPersonal = 2;
+                    PacienteCln.insertar(paciente);
+                }
+                else
+                {
+                    int index = dgvLista.CurrentCell.RowIndex;
+                    paciente.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    PacienteCln.actualizar(paciente);
+                }
+                listar();
+                btnCancelar.PerformClick();
+                MessageBox.Show("Paciente guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                int index = dgvLista.CurrentCell.RowIndex;
-                paciente.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-                PacienteCln.actualizar(paciente);
-            }
-            listar();
-            btnCancelar.PerformClick();
-            MessageBox.Show("Paciente guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void limpiar()
         {
@@ -165,6 +221,16 @@ namespace CpPsiquiatrico
             menu.Show();
 
             this.Close();
+        }
+
+        private void pbxCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

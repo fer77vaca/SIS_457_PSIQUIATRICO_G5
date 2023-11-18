@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.lblBusqueda = new System.Windows.Forms.Label();
@@ -58,11 +59,33 @@
             this.lblCedula = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.pnlControl = new System.Windows.Forms.Panel();
+            this.erpNombre = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpCedula = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTelefono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpHistorial = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTratamiento = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpFechaAdmision = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpEdad = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpPersonal = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
+            this.pnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpHistorial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTratamiento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFechaAdmision)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEdad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPersonal)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -84,7 +107,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(911, 63);
+            this.btnBuscar.Location = new System.Drawing.Point(845, 63);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(77, 32);
             this.btnBuscar.TabIndex = 8;
@@ -360,12 +383,75 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
+            this.pbxCerrar.Location = new System.Drawing.Point(123, 3);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
+            this.pbxCerrar.TabIndex = 1;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
+            // 
+            // pbxMinimizar
+            // 
+            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
+            this.pbxMinimizar.Location = new System.Drawing.Point(86, 3);
+            this.pbxMinimizar.Name = "pbxMinimizar";
+            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
+            this.pbxMinimizar.TabIndex = 0;
+            this.pbxMinimizar.TabStop = false;
+            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
+            // 
+            // pnlControl
+            // 
+            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlControl.Controls.Add(this.pbxCerrar);
+            this.pnlControl.Controls.Add(this.pbxMinimizar);
+            this.pnlControl.Location = new System.Drawing.Point(845, 0);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(158, 40);
+            this.pnlControl.TabIndex = 13;
+            // 
+            // erpNombre
+            // 
+            this.erpNombre.ContainerControl = this;
+            // 
+            // erpCedula
+            // 
+            this.erpCedula.ContainerControl = this;
+            // 
+            // erpTelefono
+            // 
+            this.erpTelefono.ContainerControl = this;
+            // 
+            // erpHistorial
+            // 
+            this.erpHistorial.ContainerControl = this;
+            // 
+            // erpTratamiento
+            // 
+            this.erpTratamiento.ContainerControl = this;
+            // 
+            // erpFechaAdmision
+            // 
+            this.erpFechaAdmision.ContainerControl = this;
+            // 
+            // erpEdad
+            // 
+            this.erpEdad.ContainerControl = this;
+            // 
+            // erpPersonal
+            // 
+            this.erpPersonal.ContainerControl = this;
+            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(1000, 564);
+            this.ClientSize = new System.Drawing.Size(1000, 567);
+            this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
@@ -375,6 +461,7 @@
             this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -386,6 +473,17 @@
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudEdad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
+            this.pnlControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCedula)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpHistorial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTratamiento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFechaAdmision)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEdad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPersonal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,5 +521,16 @@
         private System.Windows.Forms.ComboBox cbxPersonal;
         private System.Windows.Forms.Label lblPersonalAsignado;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.PictureBox pbxCerrar;
+        private System.Windows.Forms.PictureBox pbxMinimizar;
+        private System.Windows.Forms.Panel pnlControl;
+        private System.Windows.Forms.ErrorProvider erpNombre;
+        private System.Windows.Forms.ErrorProvider erpCedula;
+        private System.Windows.Forms.ErrorProvider erpTelefono;
+        private System.Windows.Forms.ErrorProvider erpHistorial;
+        private System.Windows.Forms.ErrorProvider erpTratamiento;
+        private System.Windows.Forms.ErrorProvider erpFechaAdmision;
+        private System.Windows.Forms.ErrorProvider erpEdad;
+        private System.Windows.Forms.ErrorProvider erpPersonal;
     }
 }

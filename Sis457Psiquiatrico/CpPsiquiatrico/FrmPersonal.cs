@@ -39,19 +39,19 @@ namespace CpPsiquiatrico
         }
         private void FrmPersonal_Load(object sender, EventArgs e)
         {
-            Size = new Size (1018, 396);
+            Size = new Size (1000, 353); //1000; 568 1000; 353
             listar();
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size (1018, 611);
+            Size = new Size (1000, 568);
             txtNombre.Focus();
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esNuevo = false;
-            Size = new Size(1018, 611);
+            Size = new Size(1000, 568);
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
@@ -64,7 +64,7 @@ namespace CpPsiquiatrico
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(1018, 396);
+            Size = new Size(1000, 353);
             limpiar();
         }
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -112,30 +112,33 @@ namespace CpPsiquiatrico
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            var personal = new Personal();
-            personal.nombre = txtNombre.Text.Trim();
-            personal.cedulaIdentidad = txtCedula.Text.Trim();
-            personal.especialidad = txtEspecialidad.Text.Trim();
-            personal.telefono = txtTelefono.Text.Trim();
-            personal.horarioTrabajo = txtHorario.Text.Trim();
-            personal.usuarioRegistro = "SIS_457";
+            if (validar())
+            {
+                var personal = new Personal();
+                personal.nombre = txtNombre.Text.Trim();
+                personal.cedulaIdentidad = txtCedula.Text.Trim();
+                personal.especialidad = txtEspecialidad.Text.Trim();
+                personal.telefono = txtTelefono.Text.Trim();
+                personal.horarioTrabajo = txtHorario.Text.Trim();
+                personal.usuarioRegistro = "SIS_457";
 
-            if (esNuevo)
-            {
-                personal.fechaRegistro = DateTime.Now;
-                personal.estado = 1;
-                PersonalCln.insertar(personal);
+                if (esNuevo)
+                {
+                    personal.fechaRegistro = DateTime.Now;
+                    personal.estado = 1;
+                    PersonalCln.insertar(personal);
+                }
+                else
+                {
+                    int index = dgvLista.CurrentCell.RowIndex;
+                    personal.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    PersonalCln.actualizar(personal);
+                }
+                listar();
+                btnCancelar.PerformClick();
+                MessageBox.Show("Personal guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                int index = dgvLista.CurrentCell.RowIndex;
-                personal.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-                PersonalCln.actualizar(personal);
-            }
-            listar();
-            btnCancelar.PerformClick();
-            MessageBox.Show("Personal guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void limpiar ()
         {
@@ -167,6 +170,16 @@ namespace CpPsiquiatrico
             menu.Show();
 
             this.Close();
+        }
+
+        private void pbxCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

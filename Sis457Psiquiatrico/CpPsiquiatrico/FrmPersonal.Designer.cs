@@ -58,6 +58,9 @@
             this.erpHorario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpTelefono = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnVolver = new System.Windows.Forms.Button();
+            this.pnlControl = new System.Windows.Forms.Panel();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAcciones.SuspendLayout();
@@ -67,6 +70,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpEspecialidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpHorario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).BeginInit();
+            this.pnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -117,7 +123,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.Location = new System.Drawing.Point(843, 63);
+            this.btnBuscar.Location = new System.Drawing.Point(844, 68);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(77, 32);
             this.btnBuscar.TabIndex = 4;
@@ -140,15 +146,15 @@
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(159, 300);
+            this.pnlAcciones.Location = new System.Drawing.Point(31, 300);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(491, 44);
+            this.pnlAcciones.Size = new System.Drawing.Size(292, 44);
             this.pnlAcciones.TabIndex = 6;
             // 
             // btnEliminar
             // 
             this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(371, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(174, 4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 32);
             this.btnEliminar.TabIndex = 9;
@@ -159,7 +165,7 @@
             // btnEditar
             // 
             this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(257, 3);
+            this.btnEditar.Location = new System.Drawing.Point(91, 4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(77, 32);
             this.btnEditar.TabIndex = 8;
@@ -169,7 +175,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(148, 3);
+            this.btnNuevo.Location = new System.Drawing.Point(8, 4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(77, 32);
             this.btnNuevo.TabIndex = 7;
@@ -328,12 +334,43 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // pnlControl
+            // 
+            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlControl.Controls.Add(this.pbxCerrar);
+            this.pnlControl.Controls.Add(this.pbxMinimizar);
+            this.pnlControl.Location = new System.Drawing.Point(844, -1);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(158, 40);
+            this.pnlControl.TabIndex = 9;
+            // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
+            this.pbxCerrar.Location = new System.Drawing.Point(123, 3);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
+            this.pbxCerrar.TabIndex = 1;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
+            // 
+            // pbxMinimizar
+            // 
+            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
+            this.pbxMinimizar.Location = new System.Drawing.Point(86, 3);
+            this.pbxMinimizar.Name = "pbxMinimizar";
+            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
+            this.pbxMinimizar.TabIndex = 0;
+            this.pbxMinimizar.TabStop = false;
+            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
+            // 
             // FrmPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1000, 564);
+            this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
@@ -359,6 +396,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.erpEspecialidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpHorario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).EndInit();
+            this.pnlControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,6 +435,9 @@
         private System.Windows.Forms.ErrorProvider erpHorario;
         private System.Windows.Forms.ErrorProvider erpTelefono;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.PictureBox pbxCerrar;
+        private System.Windows.Forms.Panel pnlControl;
+        private System.Windows.Forms.PictureBox pbxMinimizar;
     }
 }
 
