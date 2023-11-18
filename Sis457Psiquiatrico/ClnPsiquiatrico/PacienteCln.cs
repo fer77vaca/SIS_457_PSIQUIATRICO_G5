@@ -23,7 +23,7 @@ namespace ClnPsiquiatrico
             using (var context = new LabPsiquiatricoEntities1 ())
             {
                 var existente = context.Paciente.Find (paciente.id);
-                ///existente.idPersonal = paciente.idPersonal;
+                //existente.idPersonal = paciente.idPersonal;
                 existente.nombre = paciente.nombre;
                 existente.cedulaIdentidad = paciente.cedulaIdentidad;
                 existente.edad = paciente.edad;

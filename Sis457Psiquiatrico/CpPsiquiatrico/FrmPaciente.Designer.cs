@@ -84,7 +84,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(855, 63);
+            this.btnBuscar.Location = new System.Drawing.Point(911, 63);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(77, 32);
             this.btnBuscar.TabIndex = 8;
@@ -135,15 +135,15 @@
             this.pnlAcciones.Controls.Add(this.btnEliminar);
             this.pnlAcciones.Controls.Add(this.btnEditar);
             this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Location = new System.Drawing.Point(109, 279);
+            this.pnlAcciones.Location = new System.Drawing.Point(12, 279);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(525, 41);
+            this.pnlAcciones.Size = new System.Drawing.Size(278, 41);
             this.pnlAcciones.TabIndex = 10;
             // 
             // btnEliminar
             // 
             this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(394, 3);
+            this.btnEliminar.Location = new System.Drawing.Point(172, 0);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(87, 32);
             this.btnEliminar.TabIndex = 13;
@@ -154,7 +154,7 @@
             // btnEditar
             // 
             this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(280, 3);
+            this.btnEditar.Location = new System.Drawing.Point(89, 0);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(77, 32);
             this.btnEditar.TabIndex = 12;
@@ -164,7 +164,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(171, 3);
+            this.btnNuevo.Location = new System.Drawing.Point(6, 0);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(77, 32);
             this.btnNuevo.TabIndex = 11;
@@ -273,7 +273,7 @@
             this.txtTratamiento.BackColor = System.Drawing.SystemColors.Info;
             this.txtTratamiento.Location = new System.Drawing.Point(140, 170);
             this.txtTratamiento.Name = "txtTratamiento";
-            this.txtTratamiento.Size = new System.Drawing.Size(589, 27);
+            this.txtTratamiento.Size = new System.Drawing.Size(264, 27);
             this.txtTratamiento.TabIndex = 29;
             // 
             // lblTratamiento
@@ -352,7 +352,7 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(838, 293);
+            this.btnVolver.Location = new System.Drawing.Point(845, 287);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(143, 33);
             this.btnVolver.TabIndex = 12;

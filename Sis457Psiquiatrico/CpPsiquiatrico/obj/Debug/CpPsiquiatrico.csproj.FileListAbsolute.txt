@@ -106,7 +106,6 @@ D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.AssemblyR
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmAutenticacion.resources
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPaciente.resources
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPersonal.resources
-D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmPrincipal.resources
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.Properties.Resources.resources
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.GenerateResource.cache
 D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.csproj.CoreCompileInputs.cache
@@ -146,3 +145,6 @@ D:\Sis457Psiquiatrico_2\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmMenu.resource
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmCita.resources
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmMenu.resources
 D:\Sis457Psiquiatrico_3\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmUsuario.resources
+D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmCita.resources
+D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmMenu.resources
+D:\Sis457Psiquiatrico_4\CpPsiquiatrico\obj\Debug\CpPsiquiatrico.FrmUsuario.resources

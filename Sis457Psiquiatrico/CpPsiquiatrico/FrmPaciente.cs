@@ -66,6 +66,8 @@ namespace CpPsiquiatrico
             esNuevo = false;
             Size = new Size(1018, 611);
 
+            cbxPersonal.Enabled = false;        // Ultima modificacion MELBYN 
+
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             var paciente = PacienteCln.get(id);
