@@ -89,6 +89,9 @@
     <Compile Include="paRecetaListar_Result.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>
+    <Compile Include="paUsuarioListar_Result.cs">
+      <DependentUpon>Modelo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Personal.cs">
       <DependentUpon>Modelo.tt</DependentUpon>
     </Compile>

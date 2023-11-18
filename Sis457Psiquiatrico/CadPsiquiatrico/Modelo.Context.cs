@@ -78,5 +78,14 @@ namespace CadPsiquiatrico
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paCitaListar_Result>("paCitaListar", parametroParameter);
         }
+    
+        public virtual ObjectResult<paUsuarioListar_Result> paUsuarioListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paUsuarioListar_Result>("paUsuarioListar", parametroParameter);
+        }
     }
 }

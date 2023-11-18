@@ -162,6 +162,9 @@
         <Function Name="paRecetaListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="parametro" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="paUsuarioListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="parametro" Type="varchar" Mode="In" />
+        </Function>
         <EntityContainer Name="LabPsiquiatricoModelStoreContainer">
           <EntitySet Name="Cita" EntityType="Self.Cita" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Medicamento" EntityType="Self.Medicamento" Schema="dbo" store:Type="Tables" />
@@ -360,6 +363,9 @@
             <End Role="Cita" EntitySet="Cita" />
           </AssociationSet>
           <FunctionImport Name="paCitaListar" ReturnType="Collection(LabPsiquiatricoModel.paCitaListar_Result)">
+          <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paUsuarioListar" ReturnType="Collection(LabPsiquiatricoModel.paUsuarioListar_Result)">
             <Parameter Name="parametro" Mode="In" Type="String" />
           </FunctionImport>
           </EntityContainer>
@@ -434,6 +440,16 @@
           <Property Type="String" Name="motivo_cita" Nullable="false" MaxLength="250" />
           <Property Type="DateTime" Name="fechaReservacion" Nullable="false" Precision="23" />
           <Property Type="Decimal" Name="pago" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="paUsuarioListar_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="idPersonal" Nullable="false" />
+          <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="usuario" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="clave" Nullable="false" MaxLength="100" />
           <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
           <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
           <Property Type="Int16" Name="estado" Nullable="false" />
@@ -595,6 +611,20 @@
                 <ScalarProperty Name="motivo_cita" ColumnName="motivo_cita" />
                 <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
                 <ScalarProperty Name="pago" ColumnName="pago" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="paUsuarioListar" FunctionName="LabPsiquiatricoModel.Store.paUsuarioListar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paUsuarioListar_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
+                <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+                <ScalarProperty Name="clave" ColumnName="clave" />
                 <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
                 <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
                 <ScalarProperty Name="estado" ColumnName="estado" />
