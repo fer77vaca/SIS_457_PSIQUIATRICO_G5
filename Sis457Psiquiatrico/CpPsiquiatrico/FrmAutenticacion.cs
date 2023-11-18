@@ -47,6 +47,11 @@ namespace CpPsiquiatrico
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         //private bool validar()
         //{
         //    bool esValido = true;

@@ -45,7 +45,8 @@ namespace CpPsiquiatrico
         }
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
-            listar();
+            Size = new Size(1000, 367);
+            listar(); //1000, 562 1000, 367
             cargarPersonal();
         }
 
@@ -72,9 +73,82 @@ namespace CpPsiquiatrico
                 }
                 listar();
                 btnCancelar.PerformClick();
-                MessageBox.Show("usuario guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
+                MessageBox.Show("Usuario guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            esNuevo = true;
+            Size = new Size(1000, 562);
+            txtUsuario.Focus();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            esNuevo = false;
+            Size = new Size(1000, 562);
+
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            var usuario = UsuarioCln.get(id);
+            txtUsuario.Text = usuario.usuario1;
+            txtClave.Text = usuario.clave;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Size = new Size(1000, 367);
+            limpiar();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            listar();
+        }
+
+        private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) listar();
+        }
+        private void limpiar()
+        {
+            txtUsuario.Text = string.Empty;
+            txtClave.Text = string.Empty;
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            string usuario = dgvLista.Rows[index].Cells["usuario"].Value.ToString();
+            DialogResult dialog = MessageBox.Show($"Esta seguro que desea eliminar el Usuario {usuario}?",
+                "::: Psiquiatrico - Mensaje :::", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dialog == DialogResult.OK)
+            {
+                UsuarioCln.eliminar(id, "FVC");
+                listar();
+                MessageBox.Show("Usuario eliminado correctamente", "::: Psiquiatrico - Mensaje :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+
+            this.Close();
+        }
+
+        private void pbxCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -35,6 +35,8 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblContraseña = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,21 +66,19 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.Info;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(333, 223);
+            this.txtUsuario.Location = new System.Drawing.Point(428, 223);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(526, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(431, 27);
             this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.Text = "USUARIO: ";
             // 
             // txtClave
             // 
             this.txtClave.BackColor = System.Drawing.SystemColors.Info;
             this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClave.Location = new System.Drawing.Point(333, 300);
+            this.txtClave.Location = new System.Drawing.Point(428, 300);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(526, 27);
+            this.txtClave.Size = new System.Drawing.Size(431, 27);
             this.txtClave.TabIndex = 2;
-            this.txtClave.Text = "USUARIO: ";
             this.txtClave.TextChanged += new System.EventHandler(this.txtClave_TextChanged);
             // 
             // lblTitulo
@@ -124,6 +124,25 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(343, 229);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(68, 16);
+            this.lblUsuario.TabIndex = 6;
+            this.lblUsuario.Text = "USUARIO";
+            // 
+            // lblContraseña
+            // 
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Location = new System.Drawing.Point(310, 306);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(101, 16);
+            this.lblContraseña.TabIndex = 7;
+            this.lblContraseña.Text = "CONTRASEÑA";
             // 
             // FrmAutenticacion
             // 
@@ -131,6 +150,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(923, 551);
+            this.Controls.Add(this.lblContraseña);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblTitulo);
@@ -157,5 +178,7 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblContraseña;
     }
 }
