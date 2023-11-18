@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -50,6 +51,9 @@
             this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.pbxMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlControl = new System.Windows.Forms.Panel();
+            this.lblPersonal = new System.Windows.Forms.Label();
+            this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -57,6 +61,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
             this.pnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpClave)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxLista
@@ -179,6 +185,7 @@
             // 
             // gbxDatos
             // 
+            this.gbxDatos.Controls.Add(this.lblPersonal);
             this.gbxDatos.Controls.Add(this.cbxCedulaIdentidad);
             this.gbxDatos.Controls.Add(this.txtClave);
             this.gbxDatos.Controls.Add(this.txtUsuario);
@@ -196,9 +203,9 @@
             // cbxCedulaIdentidad
             // 
             this.cbxCedulaIdentidad.FormattingEnabled = true;
-            this.cbxCedulaIdentidad.Location = new System.Drawing.Point(758, 64);
+            this.cbxCedulaIdentidad.Location = new System.Drawing.Point(687, 64);
             this.cbxCedulaIdentidad.Name = "cbxCedulaIdentidad";
-            this.cbxCedulaIdentidad.Size = new System.Drawing.Size(160, 28);
+            this.cbxCedulaIdentidad.Size = new System.Drawing.Size(231, 28);
             this.cbxCedulaIdentidad.TabIndex = 18;
             // 
             // txtClave
@@ -283,6 +290,23 @@
             this.pnlControl.Size = new System.Drawing.Size(158, 36);
             this.pnlControl.TabIndex = 17;
             // 
+            // lblPersonal
+            // 
+            this.lblPersonal.AutoSize = true;
+            this.lblPersonal.Location = new System.Drawing.Point(545, 64);
+            this.lblPersonal.Name = "lblPersonal";
+            this.lblPersonal.Size = new System.Drawing.Size(136, 20);
+            this.lblPersonal.TabIndex = 19;
+            this.lblPersonal.Text = "C.I. del Personal:";
+            // 
+            // erpUsuario
+            // 
+            this.erpUsuario.ContainerControl = this;
+            // 
+            // erpClave
+            // 
+            this.erpClave.ContainerControl = this;
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -301,6 +325,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUsuario";
             this.Load += new System.EventHandler(this.FrmUsuario_Load);
             this.gbxLista.ResumeLayout(false);
@@ -311,6 +336,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
             this.pnlControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpClave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,5 +367,8 @@
         private System.Windows.Forms.PictureBox pbxCerrar;
         private System.Windows.Forms.PictureBox pbxMinimizar;
         private System.Windows.Forms.Panel pnlControl;
+        private System.Windows.Forms.Label lblPersonal;
+        private System.Windows.Forms.ErrorProvider erpUsuario;
+        private System.Windows.Forms.ErrorProvider erpClave;
     }
 }

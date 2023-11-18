@@ -49,9 +49,27 @@ namespace CpPsiquiatrico
             listar(); //1000, 562 1000, 367
             cargarPersonal();
         }
-
+        private bool validar ()
+        {
+            bool esValido = true;
+            erpUsuario.SetError(txtUsuario, "");
+            erpClave.SetError(txtClave, "");
+            if (string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                esValido = false;
+                erpUsuario.SetError(txtUsuario, "El campo Usuario es obligatorio");
+            }
+            if (string.IsNullOrEmpty(txtClave.Text))
+            {
+                esValido = false;
+                erpClave.SetError(txtClave, "El campo Clave es obligatorio");
+            }
+            return esValido;
+        }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (validar())
+            {
                 var usuario = new Usuario();
                 usuario.usuario1 = txtUsuario.Text.Trim();
                 usuario.clave = Util.Encrypt(txtClave.Text.Trim());
@@ -75,6 +93,7 @@ namespace CpPsiquiatrico
                 btnCancelar.PerformClick();
                 MessageBox.Show("Usuario guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)

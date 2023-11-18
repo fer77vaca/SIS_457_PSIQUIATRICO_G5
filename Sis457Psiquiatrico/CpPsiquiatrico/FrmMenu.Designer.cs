@@ -43,6 +43,7 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pbxImagen = new System.Windows.Forms.PictureBox();
+            this.btnUsusario = new System.Windows.Forms.Button();
             this.pnlAcciones.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,6 +55,7 @@
             // 
             // pnlAcciones
             // 
+            this.pnlAcciones.Controls.Add(this.btnUsusario);
             this.pnlAcciones.Controls.Add(this.btnCatalogo);
             this.pnlAcciones.Controls.Add(this.btnPaciente);
             this.pnlAcciones.Controls.Add(this.btnCita);
@@ -67,7 +69,7 @@
             // 
             // btnCatalogo
             // 
-            this.btnCatalogo.Location = new System.Drawing.Point(0, 295);
+            this.btnCatalogo.Location = new System.Drawing.Point(3, 350);
             this.btnCatalogo.Name = "btnCatalogo";
             this.btnCatalogo.Size = new System.Drawing.Size(150, 49);
             this.btnCatalogo.TabIndex = 4;
@@ -193,6 +195,16 @@
             this.pbxImagen.TabIndex = 0;
             this.pbxImagen.TabStop = false;
             // 
+            // btnUsusario
+            // 
+            this.btnUsusario.Location = new System.Drawing.Point(3, 295);
+            this.btnUsusario.Name = "btnUsusario";
+            this.btnUsusario.Size = new System.Drawing.Size(150, 49);
+            this.btnUsusario.TabIndex = 5;
+            this.btnUsusario.Text = "Usuario";
+            this.btnUsusario.UseVisualStyleBackColor = true;
+            this.btnUsusario.Click += new System.EventHandler(this.btnUsusario_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -238,5 +250,6 @@
         private System.Windows.Forms.PictureBox pbxCerrar;
         private System.Windows.Forms.PictureBox pbxMinimizar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnUsusario;
     }
 }

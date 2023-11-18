@@ -38,7 +38,7 @@ namespace CpPsiquiatrico
             else
             {
                 MessageBox.Show("Usuario y/o contraseña incorrectos",
-                    "::: Musica - Mensaje :::", MessageBoxButtons.OK,
+                    "::: Psiquiatrico - Mensaje :::", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }

@@ -57,6 +57,14 @@ namespace CpPsiquiatrico
 
             this.Hide();
         }
+
+        private void btnUsusario_Click(object sender, EventArgs e)
+        {
+            FrmUsuario usuario = new FrmUsuario();
+            usuario.Show();
+
+            this.Hide();
+        }
     }
     //public void OpenChilForm(Form ChilForm)
     //{
