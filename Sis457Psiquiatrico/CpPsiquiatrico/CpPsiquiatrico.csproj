@@ -192,6 +192,33 @@
   <ItemGroup>
     <None Include="Resources\A22.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAPTURA 1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura 2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura 4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura 3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura 41.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

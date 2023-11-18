@@ -58,6 +58,7 @@ namespace CpPsiquiatrico
         {
             esNuevo = true;
             Size = new Size(1000, 564);
+            cbxPersonal.Enabled = true;  /// ensayo
             txtNombre.Focus();
         }
 
@@ -66,7 +67,7 @@ namespace CpPsiquiatrico
             esNuevo = false;
             Size = new Size(1000, 564);
 
-            cbxPersonal.Enabled = false;        // Ultima modificacion MELBYN 
+            cbxPersonal.Enabled = false;// Ultima modificacion MELBYN 
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
@@ -168,18 +169,22 @@ namespace CpPsiquiatrico
                 paciente.fechaAdmision = dtpFechaAdmision.Value;
                 paciente.usuarioRegistro = "FVC";
 
+
                 if (esNuevo)
                 {
                     paciente.fechaRegistro = DateTime.Now;
                     paciente.estado = 1;
                     paciente.idPersonal = Convert.ToInt32(cbxPersonal.SelectedValue);
                     //paciente.idPersonal = 2;
+                    cbxPersonal.Enabled = true;
                     PacienteCln.insertar(paciente);
+
                 }
                 else
                 {
                     int index = dgvLista.CurrentCell.RowIndex;
                     paciente.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    
                     PacienteCln.actualizar(paciente);
                 }
                 listar();

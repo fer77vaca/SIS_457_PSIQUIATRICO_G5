@@ -41,6 +41,7 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.lblPersonal = new System.Windows.Forms.Label();
             this.cbxCedulaIdentidad = new System.Windows.Forms.ComboBox();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.pbxCerrar = new System.Windows.Forms.PictureBox();
             this.pbxMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlControl = new System.Windows.Forms.Panel();
-            this.lblPersonal = new System.Windows.Forms.Label();
             this.erpUsuario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpClave = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbxLista.SuspendLayout();
@@ -200,6 +200,15 @@
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos de Usuario";
             // 
+            // lblPersonal
+            // 
+            this.lblPersonal.AutoSize = true;
+            this.lblPersonal.Location = new System.Drawing.Point(545, 64);
+            this.lblPersonal.Name = "lblPersonal";
+            this.lblPersonal.Size = new System.Drawing.Size(136, 20);
+            this.lblPersonal.TabIndex = 19;
+            this.lblPersonal.Text = "C.I. del Personal:";
+            // 
             // cbxCedulaIdentidad
             // 
             this.cbxCedulaIdentidad.FormattingEnabled = true;
@@ -290,15 +299,6 @@
             this.pnlControl.Size = new System.Drawing.Size(158, 36);
             this.pnlControl.TabIndex = 17;
             // 
-            // lblPersonal
-            // 
-            this.lblPersonal.AutoSize = true;
-            this.lblPersonal.Location = new System.Drawing.Point(545, 64);
-            this.lblPersonal.Name = "lblPersonal";
-            this.lblPersonal.Size = new System.Drawing.Size(136, 20);
-            this.lblPersonal.TabIndex = 19;
-            this.lblPersonal.Text = "C.I. del Personal:";
-            // 
             // erpUsuario
             // 
             this.erpUsuario.ContainerControl = this;
@@ -311,6 +311,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.gbxLista);
