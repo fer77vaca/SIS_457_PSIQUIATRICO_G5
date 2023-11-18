@@ -30,27 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.pnlLogo = new System.Windows.Forms.Panel();
-            this.pnlControl = new System.Windows.Forms.Panel();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pbxImagen = new System.Windows.Forms.PictureBox();
-            this.pbxCerrar = new System.Windows.Forms.PictureBox();
-            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
             this.btnUsusario = new System.Windows.Forms.Button();
             this.btnCatalogo = new System.Windows.Forms.Button();
             this.btnPaciente = new System.Windows.Forms.Button();
             this.btnCita = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlControl = new System.Windows.Forms.Panel();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pbxImagen = new System.Windows.Forms.PictureBox();
             this.pnlAcciones.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlAcciones
@@ -66,84 +66,6 @@
             this.pnlAcciones.Name = "pnlAcciones";
             this.pnlAcciones.Size = new System.Drawing.Size(160, 573);
             this.pnlAcciones.TabIndex = 0;
-            // 
-            // pnlLogo
-            // 
-            this.pnlLogo.Controls.Add(this.pictureBox1);
-            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(160, 124);
-            this.pnlLogo.TabIndex = 0;
-            // 
-            // pnlControl
-            // 
-            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
-            this.pnlControl.Controls.Add(this.pbxCerrar);
-            this.pnlControl.Controls.Add(this.pbxMinimizar);
-            this.pnlControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlControl.Location = new System.Drawing.Point(160, 0);
-            this.pnlControl.Name = "pnlControl";
-            this.pnlControl.Size = new System.Drawing.Size(1016, 46);
-            this.pnlControl.TabIndex = 1;
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(964, 497);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(200, 67);
-            this.lblHora.TabIndex = 1;
-            this.lblHora.Text = "HORA";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(591, 520);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(134, 39);
-            this.lblFecha.TabIndex = 2;
-            this.lblFecha.Text = "FECHA";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pbxImagen
-            // 
-            this.pbxImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbxImagen.Image = global::CpPsiquiatrico.Properties.Resources.c11eaa946097fceb09c32506e83ddc4c;
-            this.pbxImagen.Location = new System.Drawing.Point(160, 43);
-            this.pbxImagen.Name = "pbxImagen";
-            this.pbxImagen.Size = new System.Drawing.Size(1016, 451);
-            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxImagen.TabIndex = 0;
-            this.pbxImagen.TabStop = false;
-            // 
-            // pbxCerrar
-            // 
-            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
-            this.pbxCerrar.Location = new System.Drawing.Point(969, 9);
-            this.pbxCerrar.Name = "pbxCerrar";
-            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
-            this.pbxCerrar.TabIndex = 1;
-            this.pbxCerrar.TabStop = false;
-            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
-            // 
-            // pbxMinimizar
-            // 
-            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
-            this.pbxMinimizar.Location = new System.Drawing.Point(928, 9);
-            this.pbxMinimizar.Name = "pbxMinimizar";
-            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
-            this.pbxMinimizar.TabIndex = 0;
-            this.pbxMinimizar.TabStop = false;
-            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
             // 
             // btnUsusario
             // 
@@ -210,6 +132,15 @@
             this.btnPersonal.UseVisualStyleBackColor = true;
             this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
+            // pnlLogo
+            // 
+            this.pnlLogo.Controls.Add(this.pictureBox1);
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(160, 124);
+            this.pnlLogo.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -220,6 +151,75 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // pnlControl
+            // 
+            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlControl.Controls.Add(this.pbxCerrar);
+            this.pnlControl.Controls.Add(this.pbxMinimizar);
+            this.pnlControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlControl.Location = new System.Drawing.Point(160, 0);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(1016, 46);
+            this.pnlControl.TabIndex = 1;
+            // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
+            this.pbxCerrar.Location = new System.Drawing.Point(969, 9);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
+            this.pbxCerrar.TabIndex = 1;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
+            // 
+            // pbxMinimizar
+            // 
+            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
+            this.pbxMinimizar.Location = new System.Drawing.Point(928, 9);
+            this.pbxMinimizar.Name = "pbxMinimizar";
+            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
+            this.pbxMinimizar.TabIndex = 0;
+            this.pbxMinimizar.TabStop = false;
+            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(964, 497);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(200, 67);
+            this.lblHora.TabIndex = 1;
+            this.lblHora.Text = "HORA";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(166, 497);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(134, 39);
+            this.lblFecha.TabIndex = 2;
+            this.lblFecha.Text = "FECHA";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pbxImagen
+            // 
+            this.pbxImagen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbxImagen.Image = global::CpPsiquiatrico.Properties.Resources.c11eaa946097fceb09c32506e83ddc4c;
+            this.pbxImagen.Location = new System.Drawing.Point(160, 43);
+            this.pbxImagen.Name = "pbxImagen";
+            this.pbxImagen.Size = new System.Drawing.Size(1016, 451);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxImagen.TabIndex = 0;
+            this.pbxImagen.TabStop = false;
             // 
             // FrmMenu
             // 
@@ -240,11 +240,11 @@
             this.Text = "FrmMenu";
             this.pnlAcciones.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

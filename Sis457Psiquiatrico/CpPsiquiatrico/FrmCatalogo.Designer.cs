@@ -28,6 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pnlControl = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -36,14 +44,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.pbxCerrar = new System.Windows.Forms.PictureBox();
-            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
-            this.pnlControl = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -52,10 +55,86 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
-            this.pnlControl.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnlControl
+            // 
+            this.pnlControl.BackColor = System.Drawing.Color.DarkSalmon;
+            this.pnlControl.Controls.Add(this.pbxCerrar);
+            this.pnlControl.Controls.Add(this.pbxMinimizar);
+            this.pnlControl.Location = new System.Drawing.Point(812, 0);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(169, 42);
+            this.pnlControl.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(34, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 16);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Dr. Andres Ruiz";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(850, 515);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Dr. Liz Borda";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 384);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 16);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Dr. Ruben Barreto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(829, 257);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(123, 16);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Dr. Angela Alanoca";
+            // 
+            // pbxCerrar
+            // 
+            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
+            this.pbxCerrar.Location = new System.Drawing.Point(123, 3);
+            this.pbxCerrar.Name = "pbxCerrar";
+            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
+            this.pbxCerrar.TabIndex = 1;
+            this.pbxCerrar.TabStop = false;
+            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
+            // 
+            // pbxMinimizar
+            // 
+            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
+            this.pbxMinimizar.Location = new System.Drawing.Point(86, 3);
+            this.pbxMinimizar.Name = "pbxMinimizar";
+            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
+            this.pbxMinimizar.TabIndex = 0;
+            this.pbxMinimizar.TabStop = false;
+            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Image = global::CpPsiquiatrico.Properties.Resources.casa3;
+            this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVolver.Location = new System.Drawing.Point(24, 507);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(160, 33);
+            this.btnVolver.TabIndex = 13;
+            this.btnVolver.Text = "Volver a Menu";
+            this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // pictureBox7
             // 
@@ -137,82 +216,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnVolver
-            // 
-            this.btnVolver.Location = new System.Drawing.Point(24, 507);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(143, 33);
-            this.btnVolver.TabIndex = 13;
-            this.btnVolver.Text = "Volver a Menu";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // pbxCerrar
-            // 
-            this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
-            this.pbxCerrar.Location = new System.Drawing.Point(123, 3);
-            this.pbxCerrar.Name = "pbxCerrar";
-            this.pbxCerrar.Size = new System.Drawing.Size(35, 34);
-            this.pbxCerrar.TabIndex = 1;
-            this.pbxCerrar.TabStop = false;
-            this.pbxCerrar.Click += new System.EventHandler(this.pbxCerrar_Click);
-            // 
-            // pbxMinimizar
-            // 
-            this.pbxMinimizar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_minimizar_30;
-            this.pbxMinimizar.Location = new System.Drawing.Point(86, 3);
-            this.pbxMinimizar.Name = "pbxMinimizar";
-            this.pbxMinimizar.Size = new System.Drawing.Size(35, 34);
-            this.pbxMinimizar.TabIndex = 0;
-            this.pbxMinimizar.TabStop = false;
-            this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
-            // 
-            // pnlControl
-            // 
-            this.pnlControl.BackColor = System.Drawing.Color.DarkSalmon;
-            this.pnlControl.Controls.Add(this.pbxCerrar);
-            this.pnlControl.Controls.Add(this.pbxMinimizar);
-            this.pnlControl.Location = new System.Drawing.Point(812, 0);
-            this.pnlControl.Name = "pnlControl";
-            this.pnlControl.Size = new System.Drawing.Size(169, 42);
-            this.pnlControl.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 16);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Dr. Andres Ruiz";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(850, 515);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Dr. Liz Borda";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 384);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 16);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Dr. Ruben Barreto";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(829, 257);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 16);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Dr. Angela Alanoca";
-            // 
             // FrmCatalogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -237,6 +240,9 @@
             this.Name = "FrmCatalogo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCatalogo";
+            this.pnlControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -245,9 +251,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
-            this.pnlControl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -234,6 +234,93 @@
   <ItemGroup>
     <None Include="Resources\icons8-menú-30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24x242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_24x242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x242.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24x243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casa4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_24x243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x243.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

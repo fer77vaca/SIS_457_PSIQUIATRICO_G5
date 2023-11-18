@@ -30,46 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.lblBusqueda = new System.Windows.Forms.Label();
             this.txtParametro = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.pnlAcciones = new System.Windows.Forms.Panel();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.lblPaciente = new System.Windows.Forms.Label();
             this.cbxPaciente = new System.Windows.Forms.ComboBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.nudPago = new System.Windows.Forms.NumericUpDown();
             this.lblPago = new System.Windows.Forms.Label();
             this.dtpFechaResrvacion = new System.Windows.Forms.DateTimePicker();
             this.lblFechaReservacion = new System.Windows.Forms.Label();
             this.txtMotivo = new System.Windows.Forms.TextBox();
             this.lblMotivo = new System.Windows.Forms.Label();
-            this.pbxCerrar = new System.Windows.Forms.PictureBox();
-            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlControl = new System.Windows.Forms.Panel();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.erpMotivo = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpFechaResrvacion = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpPago = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpPaciente = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.pbxCerrar = new System.Windows.Forms.PictureBox();
+            this.pbxMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
             this.gbxLista.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPago)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
             this.pnlControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpMotivo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaResrvacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPago)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPaciente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -89,16 +89,6 @@
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLista.Size = new System.Drawing.Size(947, 134);
             this.dgvLista.TabIndex = 0;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(842, 63);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(77, 32);
-            this.btnBuscar.TabIndex = 14;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBusqueda
             // 
@@ -127,38 +117,6 @@
             this.lblTitulo.TabIndex = 11;
             this.lblTitulo.Text = "Cita";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(224, 3);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(87, 32);
-            this.btnEliminar.TabIndex = 13;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(110, 3);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(77, 32);
-            this.btnEditar.TabIndex = 12;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(1, 3);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(77, 32);
-            this.btnNuevo.TabIndex = 11;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // pnlAcciones
             // 
@@ -216,26 +174,6 @@
             this.cbxPaciente.Size = new System.Drawing.Size(222, 28);
             this.cbxPaciente.TabIndex = 44;
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(860, 145);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(87, 32);
-            this.btnCancelar.TabIndex = 43;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(763, 145);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(91, 32);
-            this.btnGuardar.TabIndex = 42;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // nudPago
             // 
             this.nudPago.Location = new System.Drawing.Point(193, 123);
@@ -289,6 +227,45 @@
             this.lblMotivo.TabIndex = 36;
             this.lblMotivo.Text = "Motivo:";
             // 
+            // pnlControl
+            // 
+            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
+            this.pnlControl.Controls.Add(this.pbxCerrar);
+            this.pnlControl.Controls.Add(this.pbxMinimizar);
+            this.pnlControl.Location = new System.Drawing.Point(842, -3);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Size = new System.Drawing.Size(158, 41);
+            this.pnlControl.TabIndex = 18;
+            // 
+            // erpMotivo
+            // 
+            this.erpMotivo.ContainerControl = this;
+            // 
+            // erpFechaResrvacion
+            // 
+            this.erpFechaResrvacion.ContainerControl = this;
+            // 
+            // erpPago
+            // 
+            this.erpPago.ContainerControl = this;
+            // 
+            // erpPaciente
+            // 
+            this.erpPaciente.ContainerControl = this;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Image = global::CpPsiquiatrico.Properties.Resources.casa2;
+            this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVolver.Location = new System.Drawing.Point(818, 309);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(155, 33);
+            this.btnVolver.TabIndex = 19;
+            this.btnVolver.Text = "Volver a Menu";
+            this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // pbxCerrar
             // 
             this.pbxCerrar.Image = global::CpPsiquiatrico.Properties.Resources.icons8_cerrar_ventana_30;
@@ -309,48 +286,92 @@
             this.pbxMinimizar.TabStop = false;
             this.pbxMinimizar.Click += new System.EventHandler(this.pbxMinimizar_Click);
             // 
-            // pnlControl
+            // btnCancelar
             // 
-            this.pnlControl.BackColor = System.Drawing.Color.IndianRed;
-            this.pnlControl.Controls.Add(this.pbxCerrar);
-            this.pnlControl.Controls.Add(this.pbxMinimizar);
-            this.pnlControl.Location = new System.Drawing.Point(842, -3);
-            this.pnlControl.Name = "pnlControl";
-            this.pnlControl.Size = new System.Drawing.Size(158, 41);
-            this.pnlControl.TabIndex = 18;
+            this.btnCancelar.Image = global::CpPsiquiatrico.Properties.Resources.Cancel_24x242;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(836, 145);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(111, 32);
+            this.btnCancelar.TabIndex = 43;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnVolver
+            // btnGuardar
             // 
-            this.btnVolver.Location = new System.Drawing.Point(830, 309);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(143, 33);
-            this.btnVolver.TabIndex = 19;
-            this.btnVolver.Text = "Volver a Menu";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            this.btnGuardar.Image = global::CpPsiquiatrico.Properties.Resources.Save_24x242;
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(727, 145);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(103, 32);
+            this.btnGuardar.TabIndex = 42;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // erpMotivo
+            // btnBuscar
             // 
-            this.erpMotivo.ContainerControl = this;
+            this.btnBuscar.Image = global::CpPsiquiatrico.Properties.Resources.Search_24x242;
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(842, 63);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(97, 32);
+            this.btnBuscar.TabIndex = 14;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // erpFechaResrvacion
+            // btnEliminar
             // 
-            this.erpFechaResrvacion.ContainerControl = this;
+            this.btnEliminar.Enabled = false;
+            this.btnEliminar.Image = global::CpPsiquiatrico.Properties.Resources.eliminar2;
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(194, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(106, 32);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // erpPago
+            // btnEditar
             // 
-            this.erpPago.ContainerControl = this;
+            this.btnEditar.Enabled = false;
+            this.btnEditar.Image = global::CpPsiquiatrico.Properties.Resources.Edit_24x242;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(97, 3);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(90, 32);
+            this.btnEditar.TabIndex = 12;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // erpPaciente
+            // btnNuevo
             // 
-            this.erpPaciente.ContainerControl = this;
+            this.btnNuevo.Image = global::CpPsiquiatrico.Properties.Resources.Add_24x242;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(1, 3);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(90, 32);
+            this.btnNuevo.TabIndex = 11;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // FrmCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(1000, 353);
+            this.ClientSize = new System.Drawing.Size(1000, 567);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pnlControl);
             this.Controls.Add(this.gbxDatos);
@@ -373,13 +394,13 @@
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPago)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
             this.pnlControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.erpMotivo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpFechaResrvacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPago)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpPaciente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMinimizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
