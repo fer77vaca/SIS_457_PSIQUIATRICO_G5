@@ -75,7 +75,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="paCitaListar" FunctionName="LabPsiquiatricoModel.Store.paCitaListar" />
     <FunctionImportMapping FunctionImportName="paMedicamentoListar" FunctionName="LabPsiquiatricoModel.Store.paMedicamentoListar">
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paMedicamentoListar_Result">
@@ -133,18 +132,31 @@
     <EntitySetMapping Name="Cita">
       <EntityTypeMapping TypeName="LabPsiquiatricoModel.Cita">
         <MappingFragment StoreEntitySet="Cita">
-          <ScalarProperty Name="pago" ColumnName="pago" />
-          <ScalarProperty Name="horaCita" ColumnName="horaCita" />
-          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
           <ScalarProperty Name="estado" ColumnName="estado" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="motivoCita" ColumnName="motivoCita" />
+          <ScalarProperty Name="pago" ColumnName="pago" />
+          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
+          <ScalarProperty Name="motivo" ColumnName="motivo" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
-          <ScalarProperty Name="idPersonal" ColumnName="idPersonal" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="paCitaListar" FunctionName="LabPsiquiatricoModel.Store.paCitaListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabPsiquiatricoModel.paCitaListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="nombre_paciente" ColumnName="nombre_paciente" />
+          <ScalarProperty Name="motivo_cita" ColumnName="motivo_cita" />
+          <ScalarProperty Name="fechaReservacion" ColumnName="fechaReservacion" />
+          <ScalarProperty Name="pago" ColumnName="pago" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

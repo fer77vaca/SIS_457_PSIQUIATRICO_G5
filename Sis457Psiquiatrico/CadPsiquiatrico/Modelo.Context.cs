@@ -34,15 +34,6 @@ namespace CadPsiquiatrico
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Cita> Cita { get; set; }
     
-        public virtual int paCitaListar(string parametro)
-        {
-            var parametroParameter = parametro != null ?
-                new ObjectParameter("parametro", parametro) :
-                new ObjectParameter("parametro", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("paCitaListar", parametroParameter);
-        }
-    
         public virtual ObjectResult<paMedicamentoListar_Result> paMedicamentoListar(string parametro)
         {
             var parametroParameter = parametro != null ?
@@ -77,6 +68,15 @@ namespace CadPsiquiatrico
                 new ObjectParameter("parametro", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paRecetaListar_Result>("paRecetaListar", parametroParameter);
+        }
+    
+        public virtual ObjectResult<paCitaListar_Result> paCitaListar(string parametro)
+        {
+            var parametroParameter = parametro != null ?
+                new ObjectParameter("parametro", parametro) :
+                new ObjectParameter("parametro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paCitaListar_Result>("paCitaListar", parametroParameter);
         }
     }
 }

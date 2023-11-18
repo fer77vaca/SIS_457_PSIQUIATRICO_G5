@@ -14,10 +14,9 @@
         <AssociationConnector Association="LabPsiquiatricoModel.fk_Paciente_Personal" ManuallyRouted="false" />
         <AssociationConnector Association="LabPsiquiatricoModel.fk_Receta_Paciente" ManuallyRouted="false" />
         <AssociationConnector Association="LabPsiquiatricoModel.fk_Usuario_Personal" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="LabPsiquiatricoModel.Cita" Width="1.5" PointX="5.25" PointY="3.5" />
+        <EntityTypeShape EntityType="LabPsiquiatricoModel.Cita" Width="1.5" PointX="5.25" PointY="11.875" />
         <AssociationConnector Association="LabPsiquiatricoModel.fk_Cita_Paciente" />
-        <AssociationConnector Association="LabPsiquiatricoModel.fk_Cita_Personal" />
-      </Diagram>
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -10,19 +10,17 @@
 namespace CadPsiquiatrico
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Cita
+    public partial class paCitaListar_Result
     {
         public int id { get; set; }
         public int idPaciente { get; set; }
-        public string motivo { get; set; }
+        public string nombre_paciente { get; set; }
+        public string motivo_cita { get; set; }
         public System.DateTime fechaReservacion { get; set; }
         public decimal pago { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
         public short estado { get; set; }
-    
-        public virtual Paciente Paciente { get; set; }
     }
 }

@@ -5,15 +5,13 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="idPersonal" Type="int" Nullable="false" />
     <Property Name="idPaciente" Type="int" Nullable="false" />
-    <Property Name="motivoCita" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="motivo" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="fechaReservacion" Type="datetime" Nullable="false" />
+    <Property Name="pago" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
-    <Property Name="fechaReservacion" Type="date" Nullable="false" />
-    <Property Name="horaCita" Type="date" Nullable="false" />
-    <Property Name="pago" Type="decimal" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="Medicamento">
     <Key>
@@ -96,18 +94,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_Cita_Personal">
-    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
-    <End Role="Cita" Type="Self.Cita" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Personal">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="Cita">
-        <PropertyRef Name="idPersonal" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_Medicamento_Receta">
     <End Role="Receta" Type="Self.Receta" Multiplicity="1" />
     <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="*" />
@@ -180,10 +166,6 @@
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="fk_Cita_Paciente" Association="Self.fk_Cita_Paciente">
       <End Role="Paciente" EntitySet="Paciente" />
-      <End Role="Cita" EntitySet="Cita" />
-    </AssociationSet>
-    <AssociationSet Name="fk_Cita_Personal" Association="Self.fk_Cita_Personal">
-      <End Role="Personal" EntitySet="Personal" />
       <End Role="Cita" EntitySet="Cita" />
     </AssociationSet>
     <AssociationSet Name="fk_Medicamento_Receta" Association="Self.fk_Medicamento_Receta">

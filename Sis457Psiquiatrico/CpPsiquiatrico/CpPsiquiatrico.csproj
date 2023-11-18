@@ -62,6 +62,12 @@
     <Compile Include="FrmAutenticacion.Designer.cs">
       <DependentUpon>FrmAutenticacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCita.Designer.cs">
+      <DependentUpon>FrmCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAutenticacion.resx">
       <DependentUpon>FrmAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCita.resx">
+      <DependentUpon>FrmCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPaciente.resx">
       <DependentUpon>FrmPaciente.cs</DependentUpon>
