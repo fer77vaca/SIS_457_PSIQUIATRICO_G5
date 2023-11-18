@@ -49,6 +49,14 @@ namespace CpPsiquiatrico
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnCita_Click(object sender, EventArgs e)
+        {
+            FrmCita cita = new FrmCita();
+            cita.Show();
+
+            this.Hide();
+        }
     }
     //public void OpenChilForm(Form ChilForm)
     //{

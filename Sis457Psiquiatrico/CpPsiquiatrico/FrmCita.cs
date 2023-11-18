@@ -46,7 +46,7 @@ namespace CpPsiquiatrico
         }
         private void FrmCita_Load(object sender, EventArgs e)
         {
-            Size = new Size(1018, 400);
+            Size = new Size(1000, 353); //1000, 564   1000, 353
             listar();
             cargarPaciente();
         }
@@ -54,13 +54,15 @@ namespace CpPsiquiatrico
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(1018, 611);
+            Size = new Size(1000, 564);
             txtMotivo.Focus();
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esNuevo = false;
-            Size = new Size(1018, 611);
+            Size = new Size(1000, 564);
+
+            cbxPaciente.Enabled = false;  // ULTIMA MELBIN
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
@@ -71,13 +73,13 @@ namespace CpPsiquiatrico
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(1018, 400);
+            Size = new Size(1000, 353);
             limpiar();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+           
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -89,33 +91,65 @@ namespace CpPsiquiatrico
         {
             if (e.KeyChar == (char)Keys.Enter) listar();
         }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private bool validar()
         {
-            var cita = new Cita();
-            cita.motivo = txtMotivo.Text.Trim();
-            cita.fechaReservacion = dtpFechaResrvacion.Value;
-            cita.pago = nudPago.Value;
-            cita.usuarioRegistro = "FVC";
+            bool esValido = true;
+            erpMotivo.SetError(txtMotivo, "");
+            erpFechaResrvacion.SetError(dtpFechaResrvacion, "");
+            erpPago.SetError(nudPago, "");
+            erpPaciente.SetError(cbxPaciente, "");
+            if (string.IsNullOrEmpty(txtMotivo.Text))
+            {
+                esValido = false;
+                erpMotivo.SetError(txtMotivo, "El campo Motivo es obligatorio");
+            }
+            if (string.IsNullOrEmpty(dtpFechaResrvacion.Text))
+            {
+                esValido = false;
+                erpFechaResrvacion.SetError(dtpFechaResrvacion, "El campo Fecha Reservacion es obligatorio");
+            }
+            if (string.IsNullOrEmpty(nudPago.Text))
+            {
+                esValido = false;
+                erpPago.SetError(nudPago, "El campo Pago es obligatorio");
+            }
+            if (string.IsNullOrEmpty(cbxPaciente.Text))
+            {
+                esValido = false;
+                erpPaciente.SetError(cbxPaciente, "El campo Paciente es obligatorio");
+            }
+      
+            return esValido;
+        }
+            private void btnGuardar_Click(object sender, EventArgs e)
+            {
+            if (validar())
+            {
+                var cita = new Cita();
+                cita.motivo = txtMotivo.Text.Trim();
+                cita.fechaReservacion = dtpFechaResrvacion.Value;
+                cita.pago = nudPago.Value;
+                cita.usuarioRegistro = "FVC";
 
-            if (esNuevo)
-            {
-                cita.fechaRegistro = DateTime.Now;
-                cita.estado = 1;
-                cita.idPaciente = Convert.ToInt32(cbxPaciente.SelectedValue);
-                //cita.idPaciente = 1;
-                CitaCln.insertar(cita);
+                if (esNuevo)
+                {
+                    cita.fechaRegistro = DateTime.Now;
+                    cita.estado = 1;
+                    cita.idPaciente = Convert.ToInt32(cbxPaciente.SelectedValue);
+                    //cita.idPaciente = 1;
+                    CitaCln.insertar(cita);
+                }
+                else
+                {
+                    int index = dgvLista.CurrentCell.RowIndex;
+                    cita.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    CitaCln.actualizar(cita);
+                }
+                listar();
+                btnCancelar.PerformClick();
+                MessageBox.Show("Cita guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                int index = dgvLista.CurrentCell.RowIndex;
-                cita.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-                CitaCln.actualizar(cita);
-            }
-            listar();
-            btnCancelar.PerformClick();
-            MessageBox.Show("Cita guardado exitosamente", "::: Psiquiatrico - Mensaje :::",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void limpiar()
         {
@@ -137,6 +171,24 @@ namespace CpPsiquiatrico
                 MessageBox.Show("Cita eliminada correctamente", "::: Psiquiatrico - Mensaje :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+
+            this.Close();
+        }
+
+        private void pbxCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

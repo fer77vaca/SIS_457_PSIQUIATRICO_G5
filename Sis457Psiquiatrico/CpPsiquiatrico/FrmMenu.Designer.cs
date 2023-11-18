@@ -92,6 +92,7 @@
             this.btnCita.TabIndex = 2;
             this.btnCita.Text = "Cita";
             this.btnCita.UseVisualStyleBackColor = true;
+            this.btnCita.Click += new System.EventHandler(this.btnCita_Click);
             // 
             // btnPersonal
             // 
