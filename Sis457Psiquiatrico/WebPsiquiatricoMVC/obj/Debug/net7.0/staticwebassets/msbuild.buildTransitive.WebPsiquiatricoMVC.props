@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WebPsiquiatricoMVC.props" />
+</Project>
