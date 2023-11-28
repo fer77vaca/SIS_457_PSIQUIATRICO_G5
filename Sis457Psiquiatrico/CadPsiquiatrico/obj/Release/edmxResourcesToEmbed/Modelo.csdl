@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LabPsiquiatricoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Medicamento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idReceta" Type="Int32" Nullable="false" />
+    <Property Name="nombreMedicamento" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dosificacion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Receta" Relationship="Self.fk_Medicamento_Receta" FromRole="Medicamento" ToRole="Receta" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersonal" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cedulaIdentidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="edad" Type="Int32" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="historialMedico" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tratamiento" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <Property Name="fechaAdmision" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Personal" Relationship="Self.fk_Paciente_Personal" FromRole="Paciente" ToRole="Personal" />
+    <NavigationProperty Name="Receta" Relationship="Self.fk_Receta_Paciente" FromRole="Paciente" ToRole="Receta" />
+    <NavigationProperty Name="Cita" Relationship="LabPsiquiatricoModel.fk_Cita_Paciente" FromRole="Paciente" ToRole="Cita" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cedulaIdentidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="especialidad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="horarioTrabajo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Paciente" Relationship="Self.fk_Paciente_Personal" FromRole="Personal" ToRole="Paciente" />
+    <NavigationProperty Name="Usuario" Relationship="Self.fk_Usuario_Personal" FromRole="Personal" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Receta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPaciente" Type="Int32" Nullable="false" />
+    <Property Name="fechaReceta" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="cantidadPrescrita" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="instruccionesUso" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Medicamento" Relationship="Self.fk_Medicamento_Receta" FromRole="Receta" ToRole="Medicamento" />
+    <NavigationProperty Name="Paciente" Relationship="Self.fk_Receta_Paciente" FromRole="Receta" ToRole="Paciente" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersonal" Type="Int32" Nullable="false" />
+    <Property Name="usuario1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clave" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Personal" Relationship="Self.fk_Usuario_Personal" FromRole="Usuario" ToRole="Personal" />
+  </EntityType>
+  <Association Name="fk_Medicamento_Receta">
+    <End Role="Receta" Type="Self.Receta" Multiplicity="1" />
+    <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Receta">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Medicamento">
+        <PropertyRef Name="idReceta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Paciente_Personal">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Paciente">
+        <PropertyRef Name="idPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Receta_Paciente">
+    <End Role="Paciente" Type="Self.Paciente" Multiplicity="1" />
+    <End Role="Receta" Type="Self.Receta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Receta">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Usuario_Personal">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LabPsiquiatricoEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Medicamento" EntityType="Self.Medicamento" />
+    <EntitySet Name="Paciente" EntityType="Self.Paciente" />
+    <EntitySet Name="Personal" EntityType="Self.Personal" />
+    <EntitySet Name="Receta" EntityType="Self.Receta" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="fk_Medicamento_Receta" Association="Self.fk_Medicamento_Receta">
+      <End Role="Receta" EntitySet="Receta" />
+      <End Role="Medicamento" EntitySet="Medicamento" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Paciente_Personal" Association="Self.fk_Paciente_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Paciente" EntitySet="Paciente" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Receta_Paciente" Association="Self.fk_Receta_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="Receta" EntitySet="Receta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Usuario_Personal" Association="Self.fk_Usuario_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <FunctionImport Name="paMedicamentoListar" ReturnType="Collection(LabPsiquiatricoModel.paMedicamentoListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paPacienteListar" ReturnType="Collection(LabPsiquiatricoModel.paPacienteListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paPersonalListar" ReturnType="Collection(LabPsiquiatricoModel.paPersonalListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paRecetaListar" ReturnType="Collection(LabPsiquiatricoModel.paRecetaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="Cita" EntityType="LabPsiquiatricoModel.Cita" />
+    <AssociationSet Name="fk_Cita_Paciente" Association="LabPsiquiatricoModel.fk_Cita_Paciente">
+      <End Role="Paciente" EntitySet="Paciente" />
+      <End Role="Cita" EntitySet="Cita" />
+    </AssociationSet>
+    <FunctionImport Name="paCitaListar" ReturnType="Collection(LabPsiquiatricoModel.paCitaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paUsuarioListar" ReturnType="Collection(LabPsiquiatricoModel.paUsuarioListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="paMedicamentoListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombreMedicamento" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="dosificacion" Nullable="false" MaxLength="250" />
+    <Property Type="Decimal" Name="precio" Nullable="false" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="paPacienteListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="idPersonal" Nullable="false" />
+    <Property Type="String" Name="nombrePersonal" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="nombrePaciente" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="edad" Nullable="false" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="historialMedico" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="fechaAdmision" Nullable="false" />
+    <Property Type="String" Name="tratamiento" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paPersonalListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="especialidad" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="telefono" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="horarioTrabajo" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paRecetaListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="DateTime" Name="fechaReceta" Nullable="false" />
+    <Property Type="Decimal" Name="cantidadPrescrita" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="instruccionesUso" Nullable="false" MaxLength="250" />
+  </ComplexType>
+  <EntityType Name="Cita">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPaciente" Type="Int32" Nullable="false" />
+    <Property Name="motivo" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="fechaReservacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="pago" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="estado" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Paciente" Relationship="LabPsiquiatricoModel.fk_Cita_Paciente" FromRole="Cita" ToRole="Paciente" />
+  </EntityType>
+  <Association Name="fk_Cita_Paciente">
+    <End Type="LabPsiquiatricoModel.Paciente" Role="Paciente" Multiplicity="1" />
+    <End Type="LabPsiquiatricoModel.Cita" Role="Cita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cita">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="paCitaListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="idPaciente" Nullable="false" />
+    <Property Type="String" Name="nombre_paciente" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="motivo_cita" Nullable="false" MaxLength="250" />
+    <Property Type="DateTime" Name="fechaReservacion" Nullable="false" Precision="23" />
+    <Property Type="Decimal" Name="pago" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paUsuarioListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="Int32" Name="idPersonal" Nullable="false" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="clave" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+</Schema>

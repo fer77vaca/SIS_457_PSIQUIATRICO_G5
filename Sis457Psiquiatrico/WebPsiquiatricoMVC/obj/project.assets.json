@@ -11216,11 +11216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Copia_FINAL\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
+      "projectUniqueName": "D:\\AAAAAAAA\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
       "projectName": "WebPsiquiatricoMVC",
-      "projectPath": "D:\\Copia_FINAL\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
+      "projectPath": "D:\\AAAAAAAA\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Copia_FINAL\\WebPsiquiatricoMVC\\obj\\",
+      "outputPath": "D:\\AAAAAAAA\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -45,7 +45,14 @@
             </div>
             <input type="hidden" asp-for="UsuarioRegistro" />
             <input type="hidden" asp-for="FechaRegistro" />
-            <input type="hidden" asp-for="Estado" />
+            <div class="form-group">
+                <label class="control-label">Estado</label>
+                <select asp-for="Estado" class="form-select">
+                    <option value="1">Activo</option>
+                    <option value="0">Inactivo</option>
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>

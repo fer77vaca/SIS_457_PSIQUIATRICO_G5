@@ -1,0 +1,12 @@
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\CadPsiquiatrico.dll.config
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\CadPsiquiatrico.dll
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\CadPsiquiatrico.pdb
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\EntityFramework.dll
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\EntityFramework.SqlServer.dll
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\EntityFramework.xml
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\bin\Release\EntityFramework.SqlServer.xml
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\obj\Release\CadPsiquiatrico.csproj.AssemblyReference.cache
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\obj\Release\CadPsiquiatrico.csproj.CoreCompileInputs.cache
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\obj\Release\CadPsiquiatrico.csproj.CopyComplete
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\obj\Release\CadPsiquiatrico.dll
+D:\AAAAAAAA\Sis457Psiquiatrico\CadPsiquiatrico\obj\Release\CadPsiquiatrico.pdb
