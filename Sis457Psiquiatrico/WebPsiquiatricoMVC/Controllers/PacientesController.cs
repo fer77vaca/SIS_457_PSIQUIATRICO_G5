@@ -56,7 +56,7 @@ namespace WebPsiquiatricoMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdPersonal,Nombre,CedulaIdentidad,Edad,Telefono,HistorialMedico,Tratamiento,UsuarioRegistro,FechaRegistro,Estado,FechaAdmision")] Paciente paciente)
+        public async Task<IActionResult> Create([Bind("Id,IdPersonal,Nombre,CedulaIdentidad,Edad,Telefono,HistorialMedico,Tratamiento,FechaAdmision")] Paciente paciente)
         {
             if (!string.IsNullOrEmpty(paciente.Nombre))
             {
@@ -100,7 +100,7 @@ namespace WebPsiquiatricoMVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(paciente.Nombre))
             {
                 try
                 {
@@ -155,7 +155,8 @@ namespace WebPsiquiatricoMVC.Controllers
             var paciente = await _context.Pacientes.FindAsync(id);
             if (paciente != null)
             {
-                _context.Pacientes.Remove(paciente);
+                paciente.Estado = -1;
+                //_context.Pacientes.Remove(paciente);
             }
             
             await _context.SaveChangesAsync();

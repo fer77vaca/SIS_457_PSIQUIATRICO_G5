@@ -6,45 +6,24 @@
 }
 
 <div class="mx-5">
-    <h1>Index</h1>
+    <h1>Pacientes</h1>
 
     <p>
-        <a asp-action="Create">Create New</a>
+        <a asp-action="Create">Crear Nuevo</a>
     </p>
     <table class="table">
         <thead>
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.CedulaIdentidad)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Edad)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Telefono)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.HistorialMedico)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Tratamiento)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.UsuarioRegistro)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaRegistro)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Estado)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaAdmision)
-                    
-                </th>
+                <th>Nombre</th>
+                <th>C.I.</th>
+                <th>Edad</th>
+                <th>Telefono</th>
+                <th>Historial Medico</th>
+                <th>Tratamiento</th>
+                <th>Usuario Registro</th>
+                <th>Fecha Registro</th>
+                <th>Estado</th>
+                <th>Fecha Admision</th>
                 <th>Personal Asignado</th>
                 @*             @Html.DisplayNameFor(model => model.IdPersonalNavigation) *@
                 <th></th>
@@ -85,7 +64,6 @@
                         @item.FechaAdmision.ToShortDateString()
                     </td>
                     <td>
-                        @*                 @Html.DisplayFor(modelItem => item.IdPersonalNavigation.Id) *@
                         @item.IdPersonalNavigation.Nombre
                     </td>
                     <td>

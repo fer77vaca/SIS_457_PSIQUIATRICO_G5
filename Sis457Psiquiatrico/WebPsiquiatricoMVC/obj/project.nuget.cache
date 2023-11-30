@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mSLYtaD+pcMME/MmGFfZu/bkQWlCRp7bPLMEYrQjSFju69zYDQNqFAmmju0lEEOD5jP3gnEhBQYlZPnzVpUfkQ==",
+  "dgSpecHash": "3DR6El1wZp0TAPktag929/z7LLXyeUhy+DAXKfvL979fKkU0aBHwJerPf4jAMgqcZrMBDU0urexge3IV6T3CTw==",
   "success": true,
-  "projectFilePath": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
+  "projectFilePath": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

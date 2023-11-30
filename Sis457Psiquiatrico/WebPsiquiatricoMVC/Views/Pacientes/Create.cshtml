@@ -5,57 +5,56 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Crear Paciente</h1>
 
-<h4>Paciente</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdPersonal" class="control-label"></label>
+                <label class="control-label">Personal Medico</label>
                 <select asp-for="IdPersonal" class ="form-control" asp-items="ViewBag.IdPersonal"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Nombre" class="control-label"></label>
+                <label class="control-label">Nombre</label>
                 <input asp-for="Nombre" class="form-control" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CedulaIdentidad" class="control-label"></label>
+                <label class="control-label">C.I.</label>
                 <input asp-for="CedulaIdentidad" class="form-control" />
                 <span asp-validation-for="CedulaIdentidad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Edad" class="control-label"></label>
+                <label class="control-label">Edad</label>
                 <input asp-for="Edad" class="form-control" />
                 <span asp-validation-for="Edad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Telefono" class="control-label"></label>
+                <label class="control-label">Telefono</label>
                 <input asp-for="Telefono" class="form-control" />
                 <span asp-validation-for="Telefono" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HistorialMedico" class="control-label"></label>
+                <label class="control-label">Historial Medico</label>
                 <input asp-for="HistorialMedico" class="form-control" />
                 <span asp-validation-for="HistorialMedico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Tratamiento" class="control-label"></label>
+                <label class="control-label">Tratamiento</label>
                 <input asp-for="Tratamiento" class="form-control" />
                 <span asp-validation-for="Tratamiento" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Volver a la Lista</a>
 </div>
 
 @section Scripts {

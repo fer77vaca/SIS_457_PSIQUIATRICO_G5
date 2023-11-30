@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZIQFacwvjcKWtaBqi346wK3+3A3Jzv8074DpIjxkuyE=",
+  "Hash": "ulMu8McIqhh8HBZ0VhUE90ZvepdzcycofOwGaKOg3Aw=",
   "Source": "WebPsiquiatricoMVC",
   "BasePath": "_content/WebPsiquiatricoMVC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebPsiquiatricoMVC\\wwwroot",
       "Source": "WebPsiquiatricoMVC",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebPsiquiatricoMVC.styles.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebPsiquiatricoMVC.styles.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "WebPsiquiatricoMVC.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebPsiquiatricoMVC.styles.css"
+      "OriginalItemSpec": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebPsiquiatricoMVC.styles.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebPsiquiatricoMVC.bundle.scp.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebPsiquiatricoMVC.bundle.scp.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "WebPsiquiatricoMVC.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebPsiquiatricoMVC.bundle.scp.css"
+      "OriginalItemSpec": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebPsiquiatricoMVC.bundle.scp.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\bootstrap.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\bootstrap.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\font-awesome.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\font-awesome.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/font-awesome.min.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\responsive.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\responsive.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/responsive.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\site.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\site.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/style.css.map",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.scss",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.scss",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "css/style.scss",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.scss"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\favicon.ico",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\favicon.ico",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "fonts/fontawesome-webfont.ttf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "fonts/fontawesome-webfont.woff",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "fonts/fontawesome-webfont.woff2",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\about-img.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\about-img.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/about-img.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\about-img.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\client.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\client.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/client.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\client.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d1.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d1.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/d1.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d1.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d2.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d2.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/d2.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d2.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d3.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d3.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/d3.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\d3.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\favicon.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\favicon.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/favicon.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\hero-bg.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\hero-bg.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/hero-bg.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hero-bg.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s1.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s1.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/s1.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\s1.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s2.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s2.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/s2.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\s2.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s3.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s3.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/s3.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\s3.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s4.png",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s4.png",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/s4.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\s4.png"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t1.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t1.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/t1.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\t1.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t2.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t2.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/t2.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\t2.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t3.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t3.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/t3.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\t3.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t4.jpg",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t4.jpg",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "images/t4.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\t4.jpg"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\bootstrap.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\bootstrap.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "js/bootstrap.js",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\custom.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\custom.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\jquery-3.4.1.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "js/jquery-3.4.1.min.js",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.4.1.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\site.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\site.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WebPsiquiatricoMVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
+      "ContentRoot": "D:\\LabPsiquiatrico_Proyecto_Final_1\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\",
       "BasePath": "_content/WebPsiquiatricoMVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

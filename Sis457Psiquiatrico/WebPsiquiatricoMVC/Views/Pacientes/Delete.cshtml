@@ -5,76 +5,53 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar Paciente</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Esta seguro que desea elminar el paciente?</h3>
 <div>
-    <h4>Paciente</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
+        <dt class = "col-sm-2">Nombre</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Nombre)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CedulaIdentidad)
-        </dt>
+        <dt class = "col-sm-2">Cedula de Identidad</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CedulaIdentidad)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Edad)
-        </dt>
+        <dt class = "col-sm-2">Edad</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Edad)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefono)
-        </dt>
+        <dt class = "col-sm-2">Telefono</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Telefono)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HistorialMedico)
-        </dt>
+        <dt class = "col-sm-2">Historial Medico</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.HistorialMedico)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tratamiento)
-        </dt>
+        <dt class = "col-sm-2">Tratamiento</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Tratamiento)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UsuarioRegistro)
-        </dt>
+        <dt class = "col-sm-2">Usuario Registro</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UsuarioRegistro)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </dt>
+        <dt class = "col-sm-2">Fecha Registro</dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaRegistro)
+            @Model.FechaRegistro.ToLongDateString() @Model.FechaRegistro.ToShortTimeString()
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
+        <dt class = "col-sm-2">Estado</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Estado)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaAdmision)
-        </dt>
+        <dt class = "col-sm-2">Fecha de Admision</dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaAdmision)
+            @Model.FechaAdmision.ToLongDateString() @Model.FechaAdmision.ToShortTimeString()
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdPersonalNavigation)
-        </dt>
+        <dt class = "col-sm-2">Personal Asignado</dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IdPersonalNavigation.Id)
         </dd>
@@ -82,7 +59,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver a la Lista</a>
     </form>
 </div>
