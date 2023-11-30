@@ -5,12 +5,120 @@
       "PackagePath": "staticwebassets\\WebPsiquiatricoMVC.bundle.scp.css"
     },
     {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
       "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\css\\style.scss",
+      "PackagePath": "staticwebassets\\css\\style.scss"
+    },
+    {
       "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\about-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about-img.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\client.jpg",
+      "PackagePath": "staticwebassets\\images\\client.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d1.jpg",
+      "PackagePath": "staticwebassets\\images\\d1.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d2.jpg",
+      "PackagePath": "staticwebassets\\images\\d2.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\d3.jpg",
+      "PackagePath": "staticwebassets\\images\\d3.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\hero-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero-bg.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s1.png",
+      "PackagePath": "staticwebassets\\images\\s1.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s2.png",
+      "PackagePath": "staticwebassets\\images\\s2.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s3.png",
+      "PackagePath": "staticwebassets\\images\\s3.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\s4.png",
+      "PackagePath": "staticwebassets\\images\\s4.png"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t1.jpg",
+      "PackagePath": "staticwebassets\\images\\t1.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t2.jpg",
+      "PackagePath": "staticwebassets\\images\\t2.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t3.jpg",
+      "PackagePath": "staticwebassets\\images\\t3.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\images\\t4.jpg",
+      "PackagePath": "staticwebassets\\images\\t4.jpg"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
     },
     {
       "Id": "D:\\LabPsiquiatrico_Proyecto_Final\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\wwwroot\\js\\site.js",

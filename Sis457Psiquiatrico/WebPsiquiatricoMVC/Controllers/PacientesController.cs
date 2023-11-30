@@ -47,7 +47,7 @@ namespace WebPsiquiatricoMVC.Controllers
         // GET: Pacientes/Create
         public IActionResult Create()
         {
-            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Id");
+            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Nombre");
             return View();
         }
 
