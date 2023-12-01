@@ -45,7 +45,7 @@
         </dd>
         <dt class = "col-sm-2">Estado</dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Estado)
+            @(Model.Estado == 1 ? "Activo" : "Inactivo")
         </dd>
         <dt class = "col-sm-2">Fecha de Admision</dt>
         <dd class = "col-sm-10">
@@ -53,7 +53,7 @@
         </dd>
         <dt class = "col-sm-2">Personal Asignado</dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdPersonalNavigation.Id)
+            @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
         </dd>
     </dl>
     
