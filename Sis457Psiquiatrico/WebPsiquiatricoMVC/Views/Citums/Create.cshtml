@@ -1,0 +1,43 @@
+﻿@model WebPsiquiatricoMVC.Models.Citum
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mx-5 my-5">
+    <h1>Crear Cita</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Paciente</label>
+                    <select asp-for="IdPaciente" class="form-control" asp-items="ViewBag.IdPaciente"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Motivo</label>
+                    <input asp-for="Motivo" class="form-control" />
+                    <span asp-validation-for="Motivo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Pago (Bs)</label>
+                    <input asp-for="Pago" class="form-control" />
+                    <span asp-validation-for="Pago" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Crear" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Volver a la Lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

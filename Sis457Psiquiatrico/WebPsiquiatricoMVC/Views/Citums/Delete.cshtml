@@ -1,4 +1,4 @@
-﻿@model WebPsiquiatricoMVC.Models.Personal
+﻿@model WebPsiquiatricoMVC.Models.Citum
 
 @{
     ViewData["Title"] = "Delete";
@@ -6,30 +6,22 @@
 }
 
 <div class="mx-5 my-5">
-    <h1>Eliminar Personal</h1>
-    <h3>Esta seguro que desea eliminar el personal?</h3>
+    <h1>Eliminar Cita</h1>
+    <h3>Esta seguro que desea elminar la Cita?</h3>
     <div>
         <hr />
         <dl class="row">
-            <dt class="col-sm-2">Nombre</dt>
+            <dt class="col-sm-2">Motivo</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Nombre)
+                @Html.DisplayFor(model => model.Motivo)
             </dd>
-            <dt class="col-sm-2">Cedula de Identidad</dt>
+            <dt class="col-sm-2">Fecha o Reservacion</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.CedulaIdentidad)
+                @Model.FechaReservacion.ToLongDateString() @Model.FechaReservacion.ToShortTimeString()
             </dd>
-            <dt class="col-sm-2">Especialidad</dt>
+            <dt class="col-sm-2">Pago (Bs)</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Especialidad)
-            </dd>
-            <dt class="col-sm-2">Telefono</dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Telefono)
-            </dd>
-            <dt class="col-sm-2">Horario de Trabajo</dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.HorarioTrabajo)
+                @Html.DisplayFor(model => model.Pago)
             </dd>
             <dt class="col-sm-2">Usuario Registro</dt>
             <dd class="col-sm-10">
@@ -41,8 +33,11 @@
             </dd>
             <dt class="col-sm-2">Estado</dt>
             <dd class="col-sm-10">
-                @*             @Html.DisplayFor(model => model.Estado) *@
                 @(Model.Estado == 1 ? "Activo" : "Inactivo")
+            </dd>
+            <dt class="col-sm-2">Paciente</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdPacienteNavigation.Nombre)
             </dd>
         </dl>
 

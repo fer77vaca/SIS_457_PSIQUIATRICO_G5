@@ -5,63 +5,64 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Editar Personal</h1>
-
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label class="control-label">Nombre</label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Cedula de Identidad</label>
-                <input asp-for="CedulaIdentidad" class="form-control" />
-                <span asp-validation-for="CedulaIdentidad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Especialidad</label>
-                <select asp-for="Especialidad" class="form-select">
-                    <option>Psicologo Neuronal</option>
-                    <option>Terapeuta</option>
-                    <option>Psiquiatra Traumatica</option>
-                    <option>Neuro Psicologia</option>
-                </select>
-                <span asp-validation-for="Especialidad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Telefono</label>
-                <input asp-for="Telefono" class="form-control" />
-                <span asp-validation-for="Telefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="control-label">Horario de Trabajo</label>
-                <input asp-for="HorarioTrabajo" class="form-control" />
-                <span asp-validation-for="HorarioTrabajo" class="text-danger"></span>
-            </div>
-            <input type="hidden" asp-for="UsuarioRegistro" />
-            <input type="hidden" asp-for="FechaRegistro" />
-            <div class="form-group">
-                <label class="control-label">Estado</label>
-                <select asp-for="Estado" class="form-select">
-                    <option value="1">Activo</option>
-                    <option value="0">Inactivo</option>
-                </select>
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Guardar" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="mx-5 my-5">
+    <h1>Editar Personal</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label class="control-label">Nombre</label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Cedula de Identidad</label>
+                    <input asp-for="CedulaIdentidad" class="form-control" />
+                    <span asp-validation-for="CedulaIdentidad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Especialidad</label>
+                    <select asp-for="Especialidad" class="form-select">
+                        <option>Psicologo Neuronal</option>
+                        <option>Terapeuta</option>
+                        <option>Psiquiatra Traumatica</option>
+                        <option>Neuro Psicologia</option>
+                    </select>
+                    <span asp-validation-for="Especialidad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Telefono</label>
+                    <input asp-for="Telefono" class="form-control" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Horario de Trabajo</label>
+                    <input asp-for="HorarioTrabajo" class="form-control" />
+                    <span asp-validation-for="HorarioTrabajo" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="UsuarioRegistro" />
+                <input type="hidden" asp-for="FechaRegistro" />
+                <div class="form-group">
+                    <label class="control-label">Estado</label>
+                    <select asp-for="Estado" class="form-select">
+                        <option value="1">Activo</option>
+                        <option value="0">Inactivo</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Volver a la Lista</a>
+    <div>
+        <a asp-action="Index">Volver a la Lista</a>
+    </div>
 </div>
 
 @section Scripts {
