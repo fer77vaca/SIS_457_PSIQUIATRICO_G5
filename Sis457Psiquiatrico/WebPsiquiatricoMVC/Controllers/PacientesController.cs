@@ -47,7 +47,12 @@ namespace WebPsiquiatricoMVC.Controllers
         // GET: Pacientes/Create
         public IActionResult Create()
         {
-            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Nombre");
+            ViewData["IdPersonal"] = new SelectList(_context.Personals.Where(x => x.Estado != -1 && x.Estado != 0).Select(x => new
+            {
+                x.Id,
+                Nombre = $"{x.Nombre}"
+            }).ToList(), "Id", "Nombre");
+
             return View();
         }
 

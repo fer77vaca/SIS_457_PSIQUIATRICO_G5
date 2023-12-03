@@ -47,7 +47,13 @@ namespace WebPsiquiatricoMVC.Controllers
         // GET: Citums/Create
         public IActionResult Create()
         {
-            ViewData["IdPaciente"] = new SelectList(_context.Pacientes, "Id", "Nombre");
+
+            ViewData["IdPaciente"] = new SelectList(_context.Pacientes.Where(x => x.Estado != -1 && x.Estado != 0).Select(x => new
+            {
+                x.Id,
+                Nombre = $"{x.Nombre}"
+            }).ToList(), "Id", "Nombre");
+
             return View();
         }
 
@@ -100,7 +106,7 @@ namespace WebPsiquiatricoMVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(citum.Motivo))
             {
                 try
                 {
