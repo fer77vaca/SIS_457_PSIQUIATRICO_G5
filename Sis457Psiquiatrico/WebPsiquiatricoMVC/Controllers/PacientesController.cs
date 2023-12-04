@@ -89,7 +89,7 @@ namespace WebPsiquiatricoMVC.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Nombre", paciente.IdPersonal);
+            ViewData["IdPersonal"] = new SelectList(_context.Personals.Where(x => x.Estado != -1 && x.Estado != 0), "Id", "Nombre", paciente.IdPersonal);
             return View(paciente);
         }
 

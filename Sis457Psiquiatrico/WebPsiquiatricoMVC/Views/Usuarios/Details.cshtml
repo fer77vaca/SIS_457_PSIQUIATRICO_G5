@@ -11,47 +11,39 @@
     <div>
         <hr />
         <dl class="row">
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Usuario1)
-            </dt>
+            <dt class="col-sm-2">Usuario</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Usuario1)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Clave)
-            </dt>
+            <dt class="col-sm-2">Clave</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Clave)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.UsuarioRegistro)
-            </dt>
+            <dt class="col-sm-2">Usuario Registro</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.UsuarioRegistro)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </dt>
+            <dt class="col-sm-2">Fecha Registro</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.FechaRegistro)
+                @Model.FechaRegistro.ToLongDateString() @Model.FechaRegistro.ToShortTimeString()
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Estado)
-            </dt>
+            <dt class="col-sm-2">Estado</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Estado)
+                @(Model.Estado == 1 ? "Activo" : "Inactivo")
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.IdPersonalNavigation)
-            </dt>
+            <dt class="col-sm-2">Personal</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.IdPersonalNavigation.Id)
+                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
             </dd>
         </dl>
     </div>
     <div>
-        <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
-        <a asp-action="Index">Volver a la Lista</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id">
+            <i class="fas fa-edit me-2"></i>Editar
+        </a> |
+        <a asp-action="Index">
+            <i class="bi bi-arrow-90deg-up"></i>Volver a la Lista
+        </a>
     </div>
 </div>
 

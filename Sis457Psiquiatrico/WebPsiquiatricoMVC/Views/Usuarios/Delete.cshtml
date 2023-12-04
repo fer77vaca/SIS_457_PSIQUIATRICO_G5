@@ -8,52 +8,42 @@
 <div class="mx-5 my-5">
     <h1>Eliminar Usuario</h1>
 
-    <h3>¿Esta seguro que desea elminar el usuario?</h3>
+    <h3 style="color: red;">¿Está seguro que desea eliminar el usuario?</h3>
     <div>
         <hr />
         <dl class="row">
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Usuario1)
-            </dt>
+            <dt class="col-sm-2">Usuario</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Usuario1)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Clave)
-            </dt>
+            <dt class="col-sm-2">Clave</dt> 
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Clave)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.UsuarioRegistro)
-            </dt>
+            <dt class="col-sm-2">Usuario Registro</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.UsuarioRegistro)
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </dt>
+            <dt class="col-sm-2">Fecha Registro</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.FechaRegistro)
+                @Model.FechaRegistro.ToLongDateString() @Model.FechaRegistro.ToShortTimeString()
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Estado)
-            </dt>
+            <dt class="col-sm-2">Estado</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Estado)
+                @(Model.Estado == 1 ? "Activo" : "Inactivo")
             </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.IdPersonalNavigation)
-            </dt>
+            <dt class="col-sm-2">Personal</dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.IdPersonalNavigation.Id)
+                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
             </dd>
         </dl>
 
         <form asp-action="Delete">
             <input type="hidden" asp-for="Id" />
-            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-            <a asp-action="Index">Volver a la Lista</a>
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            <a asp-action="Index">
+                <i class="bi bi-arrow-90deg-up"></i>Volver a la Lista
+            </a>
         </form>
     </div>
 </div>

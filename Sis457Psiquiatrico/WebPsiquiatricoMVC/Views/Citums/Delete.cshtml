@@ -7,7 +7,7 @@
 
 <div class="mx-5 my-5">
     <h1>Eliminar Cita</h1>
-    <h3>Esta seguro que desea elminar la Cita?</h3>
+    <h3 style="color: red;">¿Está seguro que desea eliminar la cita?</h3>
     <div>
         <hr />
         <dl class="row">
@@ -44,7 +44,9 @@
         <form asp-action="Delete">
             <input type="hidden" asp-for="Id" />
             <input type="submit" value="Eliminar" class="btn btn-danger" /> |
-            <a asp-action="Index">Volver a la Lista</a>
+            <a asp-action="Index">
+                <i class="bi bi-arrow-90deg-up"></i>Volver a la Lista
+            </a>
         </form>
     </div>
 </div>

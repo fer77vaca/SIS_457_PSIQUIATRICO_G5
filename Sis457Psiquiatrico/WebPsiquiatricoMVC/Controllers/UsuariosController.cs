@@ -21,7 +21,7 @@ namespace WebPsiquiatricoMVC.Controllers
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            var labPsiquiatricoContext = _context.Usuarios.Include(u => u.IdPersonalNavigation);
+            var labPsiquiatricoContext = _context.Usuarios.Where(x => x.Estado != -1).Include(u => u.IdPersonalNavigation);
             return View(await labPsiquiatricoContext.ToListAsync());
         }
 
@@ -93,7 +93,7 @@ namespace WebPsiquiatricoMVC.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Id", usuario.IdPersonal);
+            ViewData["IdPersonal"] = new SelectList(_context.Personals.Where(x => x.Estado != -1 && x.Estado != 0), "Id", "Nombre", usuario.IdPersonal);
             return View(usuario);
         }
 

@@ -13,11 +13,11 @@
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <label asp-for="IdPersonal" class="control-label"></label>
+                    <label class="control-label">Personal</label>
                     <select asp-for="IdPersonal" class="form-control" asp-items="ViewBag.IdPersonal"></select>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Usuario1" class="control-label"></label>
+                    <label class="control-label">Usuario</label>
                     <input asp-for="Usuario1" class="form-control" />
                     <span asp-validation-for="Usuario1" class="text-danger"></span>
                 </div>
@@ -29,7 +29,9 @@
     </div>
 
     <div>
-        <a asp-action="Index">Volver a la Lista</a>
+        <a asp-action="Index">
+            <i class="bi bi-arrow-90deg-up"></i>Volver a la Lista
+        </a>
     </div>
 </div>
 
