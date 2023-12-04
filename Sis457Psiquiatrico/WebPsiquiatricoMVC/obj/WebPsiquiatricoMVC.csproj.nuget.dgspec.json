@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LabPsiquiatrico_Proyecto_Final_8\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj": {}
+    "D:\\LabPsiquiatrico_Proyecto_Final_9\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj": {}
   },
   "projects": {
-    "D:\\LabPsiquiatrico_Proyecto_Final_8\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj": {
+    "D:\\LabPsiquiatrico_Proyecto_Final_9\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LabPsiquiatrico_Proyecto_Final_8\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
+        "projectUniqueName": "D:\\LabPsiquiatrico_Proyecto_Final_9\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
         "projectName": "WebPsiquiatricoMVC",
-        "projectPath": "D:\\LabPsiquiatrico_Proyecto_Final_8\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
+        "projectPath": "D:\\LabPsiquiatrico_Proyecto_Final_9\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\WebPsiquiatricoMVC.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\LabPsiquiatrico_Proyecto_Final_8\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\",
+        "outputPath": "D:\\LabPsiquiatrico_Proyecto_Final_9\\Sis457Psiquiatrico\\WebPsiquiatricoMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

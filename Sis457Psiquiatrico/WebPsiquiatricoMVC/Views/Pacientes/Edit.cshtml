@@ -13,15 +13,20 @@
             <form asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" asp-for="Id" />
+                @* <div class="form-group">
+                    <label class="control-label">Personal Medico</label>
+                    <select asp-for="IdPersonal" class="form-control" asp-items="ViewBag.IdPersonal"></select>
+                    <span asp-validation-for="IdPersonal" class="text-danger"></span>
+                </div> *@
+                <div class="form-group">
+                    <label class="control-label">Nombre</label>
+                    <input asp-for="Nombre" class="form-control" onKeypress="return onlyAlphabets(event, this)" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
                 <div class="form-group">
                     <label class="control-label">Personal Medico</label>
                     <select asp-for="IdPersonal" class="form-control" asp-items="ViewBag.IdPersonal"></select>
                     <span asp-validation-for="IdPersonal" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">Nombre</label>
-                    <input asp-for="Nombre" class="form-control" />
-                    <span asp-validation-for="Nombre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">C.I.</label>
@@ -40,13 +45,18 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label">Historial Medico</label>
-                    <input asp-for="HistorialMedico" class="form-control" />
+                    <input asp-for="HistorialMedico" class="form-control" onKeypress="return onlyAlphabets(event, this)"/>
                     <span asp-validation-for="HistorialMedico" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Tratamiento</label>
                     <input asp-for="Tratamiento" class="form-control" />
                     <span asp-validation-for="Tratamiento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Fecha Admision</label>
+                    <input asp-for="FechaAdmision" class="form-control" />
+                    <span asp-validation-for="FechaAdmision" class="text-danger"></span>
                 </div>
                 <input type="hidden" asp-for="UsuarioRegistro" />
                 <input type="hidden" asp-for="FechaRegistro" />
@@ -58,13 +68,11 @@
                     </select>
                     <span asp-validation-for="Estado" class="text-danger"></span>
                 </div>
-                @*             <input type="hidden" asp-for="Estado" /> *@
-
-                <div class="form-group">
+@*                 <div class="form-group">
                     <label class="control-label">Fecha Admision</label>
                     <input asp-for="FechaAdmision" class="form-control" />
                     <span asp-validation-for="FechaAdmision" class="text-danger"></span>
-                </div>
+                </div> *@
                 <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary" />
                 </div>

@@ -44,3 +44,28 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+function onlyAlphabets(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        // Permito espacios y Ñ
+        if (
+            (charCode > 64 && charCode < 91) ||
+            (charCode > 96 && charCode < 123) ||
+            charCode === 32 || // Espacio
+            charCode === 209 // Ñ
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        alert(err.Description);
+    }
+}

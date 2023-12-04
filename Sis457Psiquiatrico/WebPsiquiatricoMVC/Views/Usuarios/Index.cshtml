@@ -16,11 +16,11 @@
         <thead>
             <tr>
                 <th>Usuario</th>
-                <th>Nombre</th>
+                <th>Personal</th>
                 <th>Usuario Registro</th>
                 <th>Fecha Registro</th>
                 <th>Estado</th>
-                <th>Personal</th>
+                
                 <th></th>
             </tr>
         </thead>
@@ -43,9 +43,7 @@
                     <td>
                         @(item.Estado == 1 ? "Activo" : "Inactivo")
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.IdPersonalNavigation.Nombre)
-                    </td>
+                   
                     <td>
                         <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver"><i class="fas fa-eye me-2"></i></a>
                         <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Editar"><i class="fas fa-edit me-2"></i></a>

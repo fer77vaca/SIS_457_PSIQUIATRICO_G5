@@ -14,6 +14,10 @@
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Nombre)
             </dd>
+            <dt class="col-sm-2">Personal Asignado</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
+            </dd>
             <dt class="col-sm-2">Cedula de Identidad</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.CedulaIdentidad)
@@ -34,6 +38,10 @@
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Tratamiento)
             </dd>
+            <dt class="col-sm-2">Fecha de Admision</dt>
+            <dd class="col-sm-10">
+                @Model.FechaAdmision.ToLongDateString() @Model.FechaAdmision.ToShortTimeString()
+            </dd>
             <dt class="col-sm-2">Usuario Registro</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.UsuarioRegistro)
@@ -45,14 +53,6 @@
             <dt class="col-sm-2">Estado</dt>
             <dd class="col-sm-10">
                 @(Model.Estado == 1 ? "Activo" : "Inactivo")
-            </dd>
-            <dt class="col-sm-2">Fecha de Admision</dt>
-            <dd class="col-sm-10">
-                @Model.FechaAdmision.ToLongDateString() @Model.FechaAdmision.ToShortTimeString()
-            </dd>
-            <dt class="col-sm-2">Personal Asignado</dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
             </dd>
         </dl>
     </div>

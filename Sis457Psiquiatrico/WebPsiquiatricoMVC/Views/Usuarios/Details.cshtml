@@ -11,14 +11,18 @@
     <div>
         <hr />
         <dl class="row">
+            <dt class="col-sm-2">Personal</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
+            </dd>
             <dt class="col-sm-2">Usuario</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Usuario1)
             </dd>
-            <dt class="col-sm-2">Clave</dt>
+            @* <dt class="col-sm-2">Clave</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Clave)
-            </dd>
+            </dd> *@
             <dt class="col-sm-2">Usuario Registro</dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.UsuarioRegistro)
@@ -31,10 +35,7 @@
             <dd class="col-sm-10">
                 @(Model.Estado == 1 ? "Activo" : "Inactivo")
             </dd>
-            <dt class="col-sm-2">Personal</dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.IdPersonalNavigation.Nombre)
-            </dd>
+            
         </dl>
     </div>
     <div>

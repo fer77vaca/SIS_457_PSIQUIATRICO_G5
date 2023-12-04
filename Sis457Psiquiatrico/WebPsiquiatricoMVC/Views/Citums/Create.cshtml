@@ -18,12 +18,12 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label">Motivo</label>
-                    <input asp-for="Motivo" class="form-control" />
+                    <input asp-for="Motivo" class="form-control" onKeypress="return onlyAlphabets(event, this)" />
                     <span asp-validation-for="Motivo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Pago (Bs)</label>
-                    <input asp-for="Pago" class="form-control" />
+                    <input asp-for="Pago" class="form-control" type="number" />
                     <span asp-validation-for="Pago" class="text-danger"></span>
                 </div>
                 <div class="form-group">

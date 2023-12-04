@@ -69,7 +69,7 @@ namespace WebPsiquiatricoMVC.Controllers
             if (!string.IsNullOrEmpty(usuario.Usuario1))
             {
                 usuario.Clave = Util.Encrypt("sis457");
-                usuario.UsuarioRegistro = "sis457";
+                usuario.UsuarioRegistro = User.Identity?.Name;
                 usuario.FechaRegistro = DateTime.Now;
                 usuario.Estado = 1;
                 _context.Add(usuario);
@@ -109,10 +109,13 @@ namespace WebPsiquiatricoMVC.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(usuario.Usuario1))
             {
                 try
                 {
+                    usuario.UsuarioRegistro = User.Identity?.Name;
+                    usuario.FechaRegistro = DateTime.Now;
+                    usuario.Clave = Util.Encrypt("sis457");
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -129,7 +132,7 @@ namespace WebPsiquiatricoMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Id", usuario.IdPersonal);
+            ViewData["IdPersonal"] = new SelectList(_context.Personals, "Id", "Nombre", usuario.IdPersonal);
             return View(usuario);
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -59,6 +60,10 @@ namespace WebPsiquiatricoMVC.Controllers
         {
             if (!string.IsNullOrEmpty(personal.Nombre))
             {
+                if (!Regex.IsMatch(personal.Nombre, "^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ()\\s]+$"))
+                {
+                    ModelState.AddModelError(nameof(personal.Nombre), "El campo Nombres solo puede contener letras");
+                }
                 personal.UsuarioRegistro = "sis457";
                 personal.FechaRegistro = DateTime.Now;
                 personal.Estado = 1;
@@ -66,6 +71,7 @@ namespace WebPsiquiatricoMVC.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(personal);
         }
 
