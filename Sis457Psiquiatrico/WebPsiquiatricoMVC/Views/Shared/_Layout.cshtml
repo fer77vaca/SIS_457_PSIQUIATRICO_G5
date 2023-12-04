@@ -42,9 +42,9 @@
 
         @*  *@
         <!-- header section strats -->
-        <header class="header_section">
+        <header style="background-color : green" class="header_section">
             <div class="container">
-                <nav class="navbar navbar-expand-lg custom_nav-container " style="@(Context.Request.Path != "/" ? "background-color: white;" : "")">
+                <nav style="background-color : green" class="navbar navbar-expand-lg custom_nav-container " style="@(Context.Request.Path != "/" ? "background-color: white;" : "")">
                     <a class="navbar-brand" href="index.html">
                         <span>
                             Psiquiatrico
@@ -55,7 +55,7 @@
                         <span class=""> </span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div style="background-color : green" class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" asp-controller="Home" asp-action="Index" style="color : black">Inicio<span class="sr-only">(current)</span></a>
@@ -72,14 +72,32 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Usuarios" asp-action="Index" style="color : black">Usuarios</a>
                             </li>
-                            <form class="form-inline">
+                            <li class="nav-item">
+                                @if (User.Identity?.IsAuthenticated == false)
+                                {
+                                    <a asp-controller="Account" asp-action="Login" style="color: black">Iniciar Sesión</a>
+                                }
+                                else
+                                {
+                                    @await Html.PartialAsync("_LogoutPartial")
+                                }
+                            </li>
+                            @* <form class="form-inline">
                                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                    <i class="fa fa-search" aria-hidden="true">Iniciar Sesion</i>
-                                </button>
+@*                                     <i class="fa fa-search" aria-hidden="true">Iniciar Sesion</i> *@
+                                    @* @if (User.Identity?.IsAuthenticated == false)
+                                    {
+                                        <a asp-controller="Account" asp-action="Login" style="color: wheat">Iniciar Sesión</a>
+                                    }
+                                    else
+                                    {
+                                        @await Html.PartialAsync("_LogoutPartial")
+                                    }
+                                </button> *@
 @*                                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                     <i class="fa fa-search" aria-hidden="true">Iniciar Sesion</i>
                                 </button> *@
-                            </form>
+                            @* </form> *@
                         </ul>
                     </div>
                 </nav>
