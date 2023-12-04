@@ -59,7 +59,7 @@ namespace WebPsiquiatricoMVC.Controllers
         {
             if (!string.IsNullOrEmpty(personal.Nombre))
             {
-                personal.UsuarioRegistro = "SIS457";
+                personal.UsuarioRegistro = "sis457";
                 personal.FechaRegistro = DateTime.Now;
                 personal.Estado = 1;
                 _context.Add(personal);
