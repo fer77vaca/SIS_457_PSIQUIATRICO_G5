@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using WebPsiquiatricoMVC.Models;
 
 namespace WebPsiquiatricoMVC.Controllers
 {
+    [Authorize]
     public class PersonalesController : Controller
     {
         private readonly LabPsiquiatricoContext _context;
@@ -64,7 +66,7 @@ namespace WebPsiquiatricoMVC.Controllers
                 {
                     ModelState.AddModelError(nameof(personal.Nombre), "El campo Nombres solo puede contener letras");
                 }
-                personal.UsuarioRegistro = "sis457";
+                personal.UsuarioRegistro = User.Identity?.Name;
                 personal.FechaRegistro = DateTime.Now;
                 personal.Estado = 1;
                 _context.Add(personal);
@@ -107,6 +109,8 @@ namespace WebPsiquiatricoMVC.Controllers
             {
                 try
                 {
+                    personal.UsuarioRegistro = User.Identity?.Name;
+                    personal.FechaRegistro = DateTime.Now;
                     _context.Update(personal);
                     await _context.SaveChangesAsync();
                 }
@@ -157,6 +161,7 @@ namespace WebPsiquiatricoMVC.Controllers
             if (personal != null)
             {
                 personal.Estado = -1;
+                personal.UsuarioRegistro = User.Identity?.Name;
                 //_context.Personals.Remove(personal);
             }
             

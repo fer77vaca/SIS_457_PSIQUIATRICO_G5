@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebPsiquiatricoMVC.Models;
 
 namespace WebPsiquiatricoMVC.Controllers
 {
+    [Authorize]
     public class PacientesController : Controller
     {
         private readonly LabPsiquiatricoContext _context;
@@ -65,7 +67,7 @@ namespace WebPsiquiatricoMVC.Controllers
         {
             if (!string.IsNullOrEmpty(paciente.Nombre))
             {
-                paciente.UsuarioRegistro = "SIS457";
+                paciente.UsuarioRegistro = User.Identity?.Name;
                 paciente.FechaRegistro = DateTime.Now;
                 paciente.Estado = 1;
                 _context.Add(paciente);
@@ -109,6 +111,8 @@ namespace WebPsiquiatricoMVC.Controllers
             {
                 try
                 {
+                    paciente.UsuarioRegistro = User.Identity?.Name;
+                    paciente.FechaRegistro = DateTime.Now;
                     _context.Update(paciente);
                     await _context.SaveChangesAsync();
                 }
@@ -161,6 +165,7 @@ namespace WebPsiquiatricoMVC.Controllers
             if (paciente != null)
             {
                 paciente.Estado = -1;
+                paciente.UsuarioRegistro = User.Identity?.Name;
                 //_context.Pacientes.Remove(paciente);
             }
             

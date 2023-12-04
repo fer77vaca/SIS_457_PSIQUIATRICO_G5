@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebPsiquiatricoMVC.Models;
 
 namespace WebPsiquiatricoMVC.Controllers
 {
+    [Authorize]
     public class CitumsController : Controller
     {
         private readonly LabPsiquiatricoContext _context;
@@ -66,7 +68,7 @@ namespace WebPsiquiatricoMVC.Controllers
         {
             if (!string.IsNullOrEmpty(citum.Motivo))
             {
-                citum.UsuarioRegistro = "SIS457";
+                citum.UsuarioRegistro = User.Identity?.Name;
                 citum.FechaRegistro = DateTime.Now;
                 citum.Estado = 1;
                 _context.Add(citum);
@@ -110,6 +112,8 @@ namespace WebPsiquiatricoMVC.Controllers
             {
                 try
                 {
+                    citum.UsuarioRegistro = User.Identity?.Name;
+                    citum.FechaRegistro = DateTime.Now;
                     _context.Update(citum);
                     await _context.SaveChangesAsync();
                 }
@@ -162,6 +166,7 @@ namespace WebPsiquiatricoMVC.Controllers
             if (citum != null)
             {
                 citum.Estado = -1;
+                citum.UsuarioRegistro = User.Identity?.Name;
                 //_context.Cita.Remove(citum);
             }
             

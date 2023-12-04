@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WebPsiquiatricoMVC.Models;
 
 namespace WebPsiquiatricoMVC.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         private readonly LabPsiquiatricoContext _context;
@@ -167,7 +169,8 @@ namespace WebPsiquiatricoMVC.Controllers
             var usuario = await _context.Usuarios.FindAsync(id);
             if (usuario != null)
             {
-                _context.Usuarios.Remove(usuario);
+                usuario.Estado = -1;
+                //_context.Usuarios.Remove(usuario);
             }
             
             await _context.SaveChangesAsync();
